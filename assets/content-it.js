@@ -71,32 +71,32 @@ const CONTENT = {
  obj:'Capire perché l’organizzazione della lezione e la disciplina sono il motivo più legato al modo in cui gestisci la classe, e sapere esattamente cosa fare (e cosa non fare) quando esiste già una richiesta di rimborso.',
  sections:[
   {t:'🧩 Due estremi, un’unica causa', html:`
-   <div class="card"><p>Due classi molto diverse tra loro finiscono segnalate per lo stesso motivo: una classe caotica e una classe piombata nel silenzio. In entrambi i casi il punto è lo stesso: se ogni bambino sente che la lezione è uno spazio sicuro e strutturato in cui partecipare.</p></div>
+   <div class="card"><p>Due classi molto diverse tra loro finiscono segnalate per lo stesso motivo: una classe caotica e una classe piombata nel silenzio. In entrambi i casi il punto è lo stesso: far sentire a ogni bambino che la lezione è uno spazio sicuro e strutturato in cui partecipare.</p></div>
    ${co('co-idea','🎯',`<p><strong>Tra tutti i motivi dell’elenco, questo è quello che dipende più direttamente dal comportamento del tutor, e quindi quello che puoi correggere più in fretta.</strong> A differenza del livello o di un bisogno speciale, è una competenza che puoi cambiare già dalla prossima lezione, senza bisogno del permesso di nessuno.</p>`)}
   `},
   {t:'🛟 Se esiste già una richiesta di rimborso', html:`
    <div class="card"><p>Tutto ciò che hai letto sopra serve a intercettare il problema in anticipo. Ma forse stai aprendo questa formazione perché una famiglia ha <strong>già</strong> chiesto un rimborso. Le regole qui sotto valgono qualunque sia il motivo: leggile per prime, poi usa il resto della formazione per capire cosa ha portato a questa situazione e cosa puoi ancora fare a lezione.</p></div>
-   ${co('co-idea','💡',`<p><strong>La richiesta in sé viene creata dal Servizio Clienti, non da te</strong>: quella parte non dipende da te. Ma tutto ciò che succede a lezione da qui in avanti è ancora nelle tue mani, e non è poco.</p>`)}
-   ${co('co-danger','🤐',`<p><strong>Non dire nulla sulla richiesta</strong>, né al bambino né alla famiglia, a meno che il Servizio Clienti non ti chieda esplicitamente di dire qualcosa di preciso. Ora il tuo compito è la lezione, non la conversazione.</p>`)}
+   ${co('co-idea','💡',`<p><strong>La richiesta in sé viene creata dal Client Service, non da te</strong>: quella parte non dipende da te. Ma tutto ciò che succede a lezione da qui in avanti è ancora nelle tue mani, e non è poco.</p>`)}
+   ${co('co-danger','🤐',`<p><strong>Non dire nulla sulla richiesta</strong>, né al bambino né alla famiglia, a meno che il Client Service non ti chieda esplicitamente di dire qualcosa di preciso. Ora il tuo compito è la lezione, non la conversazione.</p>`)}
   `},
   {t:'🎯 La prossima lezione è il tuo tentativo di recupero', html:`
    <div class="card"><p>Potresti non avere altre occasioni per cambiare le cose. Considera la prossima lezione con questo bambino come il momento decisivo.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda di circostanza, ma un momento autentico in cui si sente visto e ci riesce.`},
-     {ic:'🏆', html:`<strong>Prevedi un successo visibile, fin da subito.</strong> Deve uscire dalla lezione sentendosi capace, non indietro.`},
+     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda di circostanza, ma un momento autentico in cui si senta visto e ci riesca.`},
+     {ic:'🏆', html:`<strong>Prevedi un successo rapido e ben visibile.</strong> Deve uscire dalla lezione sentendosi capace, non indietro.`},
      {ic:'👀', html:`<strong>Attenzione specifica</strong>: fallo sentire notato per qualcosa di concreto, non con lodi generiche.`},
      {ic:'🤐', html:`<strong>Nessun accenno alla richiesta</strong>: anche se è il bambino a parlarne, cambia argomento con gentilezza e continua la lezione.`}
    ])}
   `},
   {t:'📮 Avvisa subito e conosci l’unica frase sicura', html:`
-   <div class="card"><p>Puoi scoprire che esiste una richiesta dai commenti del Servizio Clienti nel profilo del bambino nel BO: non c’è un sistema automatico che ti avvisa. Quando lo sai, ciò che hai osservato nelle tue lezioni è un’informazione che il Servizio Clienti non può avere in nessun altro modo.</p></div>
+   <div class="card"><p>Puoi scoprire che esiste una richiesta dai commenti del Client Service nel profilo del bambino nel BO: non c’è un sistema automatico che ti avvisa. Quando lo sai, ciò che hai osservato nelle tue lezioni è un’informazione che il Client Service non può avere in nessun altro modo.</p></div>
    ${numlist([
-     'Lascia un commento nel BO lo stesso giorno, con esattamente ciò che hai osservato: date e fatti concreti, non impressioni',
+     'Lascia un commento nel BO lo stesso giorno, riportando esattamente ciò che hai osservato: date e fatti concreti, non impressioni',
      'Riporta le parole esatte della famiglia, se le hai',
      'Coinvolgi il tuo Team Leader lo stesso giorno',
      'Non confermare mai che un rimborso è stato approvato e non parlare mai di importi'
    ])}
-   ${co('co-ok','✅',`<p><strong>La frase che puoi dire sempre senza rischi:</strong> <em>“Il Servizio Clienti vi aiuterà con questo.”</em> Lì finisce la tua parte della conversazione: da quel momento se ne occupa il Servizio Clienti.</p>`)}
+   ${co('co-ok','✅',`<p><strong>La frase che puoi dire sempre senza rischi:</strong> <em>“Il Client Service vi aiuterà con questo.”</em> Lì finisce la tua parte della conversazione: da quel momento se ne occupa il Client Service.</p>`)}
   `},
   {t:'🌱 Continua anche dopo', html:`
    <div class="card"><p>Che la richiesta venga ritirata, che il bambino resti nel tuo gruppo o che passi a un altro tutor o formato, continua a dedicargli un’attenzione in più nelle lezioni successive. Un recupero che dura una sola lezione e poi torna in silenzio alla normalità spesso non regge affatto.</p></div>
@@ -118,7 +118,7 @@ const CONTENT = {
    </ul></div>
    <div class="card"><h4>Studenti più grandi (12+)</h4><ul>
      <li>Nomina il comportamento in modo diretto e breve, se possibile in privato: “teniamo la chat sull’argomento, così tutti riescono a seguire”</li>
-     <li>Dagli un ruolo che incanali l’energia: guidare un passaggio, aiutare un compagno</li>
+     <li>Assegna loro un ruolo che incanali l’energia: guidare un passaggio, aiutare un compagno</li>
      <li>Stabilisci l’aspettativa una volta, con calma, e mantienila con coerenza invece di ripetere gli avvertimenti</li>
    </ul></div>
   `},
@@ -131,7 +131,7 @@ const CONTENT = {
      {ic:'3️⃣', label:'Conoscili: i loro interessi sono la tua chiave d’accesso'},
      {ic:'4️⃣', label:'Ancora niente? Prova la partecipazione in privato, sempre con una frase che faccia capire che è uno spazio sicuro'}
    ])}
-   ${co('co-idea','💡',`<p><strong>Un’idea concreta:</strong> lascia che tengano la videocamera spenta, ma proponi di impostare come sfondo qualcosa che gli piace oppure, in un corso di design o di arte, invitali a disegnare qualcosa che li rappresenti (non un autoritratto) da usare come sfondo. Proponilo a tutto il gruppo, così sembra un’attività condivisa e nessuno si sente preso di mira.</p>`)}
+   ${co('co-idea','💡',`<p><strong>Un’idea concreta:</strong> lascia che tengano la videocamera spenta, ma proponi di impostare come sfondo quaqualcosa che piaccia loro oppure, in un corso di design o di arte, invitali a disegnare qualcosa che li rappresenti (non un autoritratto) da usare come sfondo. Proponilo a tutto il gruppo, così sembra un’attività condivisa e nessuno si sente preso di mira.</p>`)}
    <div class="card"><h4>Esempi di frasi per età</h4>
    <p><strong>Più piccoli (6–8 anni):</strong> <em>“Non devi far vedere la tua faccia se non vuoi, ma mi piacerebbe tanto vedere che sfondo hai scelto! Me lo racconti?”</em></p>
    <p><strong>Più grandi (12+):</strong> <em>“Nessuna fretta con la videocamera, quando te la senti. Intanto, se ti è più comodo, scrivi pure in chat.”</em></p></div>
@@ -170,7 +170,7 @@ const CONTENT = {
   {t:'🎭 Applicarlo a ogni situazione', html:`
    ${iconGrid([
      {ic:'📢', html:`<strong>Indisciplina.</strong> Rispondi con calma e in modo pratico, non brusco o seccato: un tutor irritato fa crescere il caos, uno tranquillo lo fa rientrare.`},
-     {ic:'😠', html:`<strong>Uno studente aggressivo.</strong> Abbassa la voce e rallenta il ritmo, non rispecchiare la sua intensità. Prima regola te stesso, poi affronta il comportamento.`},
+     {ic:'😠', html:`<strong>Uno studente aggressivo.</strong> Abbassa la voce e rallenta il ritmo, non farti contagiare dalla sua intensità. Prima regola te stesso, poi affronta il comportamento.`},
      {ic:'📱', html:`<strong>Uno studente distratto.</strong> Riporta l’attenzione con curiosità, non con frustrazione: “cosa ha catturato la tua attenzione in questo momento?” arriva in modo molto diverso da un sospiro.`},
      {ic:'🤐', html:`<strong>Uno studente silenzioso.</strong> La pazienza viene percepita come sicurezza. L’impazienza visibile viene percepita come pressione, e la pressione rende un bambino silenzioso ancora più silenzioso.`}
    ])}
@@ -182,7 +182,7 @@ const CONTENT = {
      {ic:'🛡️', html:`<strong>Proteggi il resto del gruppo.</strong> Se uno studente usa un linguaggio volgare o attacca un compagno, puoi silenziare il suo microfono per un momento. Tutti gli altri bambini meritano una lezione sicura.`},
      {ic:'🤝', html:`<strong>Sii fermo sul rispetto.</strong> Calma non significa debolezza: il rispetto per gli altri non è negoziabile e il gruppo deve vedere che su questo non cedi.`},
      {ic:'👪', html:`<strong>Chiedi aiuto al genitore, se serve</strong>, anche durante la lezione, se una situazione non si risolve e il genitore è nelle vicinanze.`},
-     {ic:'🌱', html:`<strong>Normalizza gli errori.</strong> Quando qualcosa va storto in un’attività, trattalo come un’occasione per imparare, davanti a tutti.`},
+     {ic:'🌱', html:`<strong>Fai capire che sbagliare è normale.</strong> Quando qualcosa va storto in un’attività, trattalo come un’occasione per imparare, davanti a tutti.`},
      {ic:'📝', html:`<strong>Segnalalo.</strong> Informa la famiglia dell’accaduto e lascia un commento nel BO, così ne resta traccia e nessuno viene colto di sorpresa.`}
    ])}
   `}
@@ -256,10 +256,10 @@ const CONTENT = {
   `},
   {t:'🚨 Come reagire: il protocollo', html:`
    ${co('co-danger','🚨',`<p><strong>Primo problema in una lezione:</strong> prova a risolverlo nei primi 10 minuti. Se ancora non funziona, avvisa il tuo Team Leader lo stesso giorno: sarà il Team Leader a decidere come recuperare la lezione. Scrivi al genitore entro 30 minuti, con un messaggio cordiale, dicendo che hai segnalato il problema al tuo team.</p>
-   <p><strong>Seconda lezione di fila con un problema:</strong> apri un ticket al Servizio Clienti lo stesso giorno. Scrivi al genitore che hai segnalato il problema e che qualcuno lo ricontatterà per una lezione di recupero.</p>
+   <p><strong>Seconda lezione di fila con un problema:</strong> apri un ticket al Client Service lo stesso giorno. Scrivi al genitore che hai segnalato il problema e che qualcuno lo ricontatterà per una lezione di recupero.</p>
    <p><strong>Una volta risolto:</strong> avvisa il genitore e chiudi il cerchio, anche se il problema sembrava piccolo.</p>`)}
   `},
-  {t:'⚖️ Far continuare a imparare tutto il gruppo', html:`
+  {t:'⚖️ Mantenere attivo il resto del gruppo', html:`
    <div class="card"><p>Il vero errore non è solo il problema tecnico in sé: è un tutor così concentrato sul problema di uno studente che il resto del gruppo perde cinque o dieci minuti di lezione.</p></div>
    ${iconGrid([
      {ic:'⏱️', html:`<strong>Datti un limite di tempo.</strong> Fai un rapido tentativo di soluzione con lo studente interessato (cambiare browser, riavviare), poi fai andare avanti il gruppo e torna da quello studente dopo o tra un’attività e l’altra.`},
@@ -295,7 +295,7 @@ const CONTENT = {
    ${numlist([
      'Ho lasciato un commento nel BO lo stesso giorno in cui ho saputo della richiesta e ho coinvolto il mio Team Leader',
      'La mia lezione successiva con questo studente è stata un vero tentativo di recupero: un vero turno, un successo visibile, attenzione specifica, nessun accenno alla richiesta',
-     'Non ho mai confermato l’approvazione né parlato di importi: ho usato l’unica frase sicura e ho lasciato il resto al Servizio Clienti'
+     'Non ho mai confermato l’approvazione né parlato di importi: ho usato l’unica frase sicura e ho lasciato il resto al Client Service'
    ])}
   `},  {t:'⚖️ Mantenere la disciplina in ogni lezione', html:`
    ${numlist([
@@ -304,9 +304,9 @@ const CONTENT = {
      'Con gli studenti più grandi (12+) nomino il comportamento in modo breve, se possibile in privato, do loro un ruolo che incanali la loro energia e mantengo le aspettative con coerenza invece di ripetere gli avvertimenti',
      'In una classe silenziosa chiedo prima gentilmente di accendere la videocamera, poi offro altri modi sicuri per partecipare (uno sfondo che piace loro, la chat, la partecipazione in privato) senza mettere pressione',
      'Quando uno studente si scollega dall’attività, la adatto senza perdere l’obiettivo di apprendimento',
-     'Prima regolo me stesso: mi prendo un momento, mantengo una voce calma e un ritmo tranquillo e non rispecchio mai l’intensità di uno studente',
+     'Prima regolo me stesso: mi prendo un momento, mantengo una voce calma e un ritmo tranquillo e non mi faccio mai contagiare dall’intensità di uno studente',
      'Sono fermo sul rispetto: se uno studente usa un linguaggio volgare o attacca un compagno, silenzio il suo microfono per un momento per proteggere il gruppo e ne parliamo dopo la lezione',
-     'Quando qualcosa va storto in un’attività, normalizzo l’errore e lo tratto come un’occasione per imparare',
+     'Quando qualcosa va storto in un’attività, faccio capire che sbagliare è normale e lo tratto come un’occasione per imparare',
      'Se una situazione non si risolve, chiedo aiuto al genitore, anche durante la lezione, e dopo informo la famiglia e lascio un commento nel BO',
      'Provo la mia postazione 30 minuti prima della lezione e faccio lavorare il gruppo mentre risolvo il problema tecnico di uno studente'
    ])}

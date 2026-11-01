@@ -9,7 +9,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-treinamento",
     heroTitle:"Conduzindo uma aula <span class=\"h-pill\">bem organizada</span>",
     heroIntro:"Você recebeu este treinamento porque tem alunos que pediram reembolso por causa de desorganização ou de problemas de disciplina na aula. Aqui, vamos mostrar o que você pode fazer como tutor e como lidar com essas situações.",
-    heroWork:"Percorra 5 módulos curtos. Cada verificação de módulo exige 70% ou mais para liberar o próximo. Cerca de 25 a 30 minutos no total.",
+    heroWork:"Complete 4 módulos curtos. Acerte pelo menos 70% em cada verificação para liberar o próximo módulo. Levará cerca de 25 a 35 minutos.",
     startBtn:"🚀 Começar o treinamento",
     pathLabel:'Sua trilha de aprendizagem',
     devTitle:'Dev: liberar todos os módulos para revisão',
@@ -35,7 +35,7 @@ const CONTENT = {
     resFailed:'Ainda não foi desta vez',
     resUnlocked:"Você liberou o próximo módulo.",
     resDone:"Você concluiu este mini-treinamento.",
-    resNeed:'Você precisa de 70% para liberar o próximo módulo. Revise a seção acima e refaça a verificação.',
+    resNeed:'Você precisa de Acerte 70% do quiz para liberar o próximo módulo. Revise a seção acima e refaça a verificação.',
     resContinue:'Continuar para a trilha de aprendizagem',
     resFinish:'Continuar',
     resBack:'Voltar à trilha',
@@ -82,24 +82,24 @@ const CONTENT = {
   {t:'🎯 Sua próxima aula é a tentativa de reverter a situação', html:`
    <div class="card"><p>Talvez você não tenha outra chance de mudar nada. Trate a próxima aula com essa criança como o momento que vai decidir tudo.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Dê a ela a vez de participar de verdade.</strong> Não uma pergunta sem sentido — um momento genuíno em que ela é vista e se sai bem.`},
+     {ic:'🙋', html:`<strong>Dê espaço para ela participar de verdade.</strong> Não faça uma pergunta só por fazer. Crie um momento genuíno em que ela se sinta valorizada e tenha a oportunidade de acertar.`},
      {ic:'🏆', html:`<strong>Garanta uma conquista cedo e bem visível.</strong> Ela deve sair da aula se sentindo capaz, não para trás.`},
      {ic:'👀', html:`<strong>Atenção específica</strong> — faça-a sentir que você reparou em algo concreto, em vez de elogiá-la de forma genérica.`},
      {ic:'🤐', html:`<strong>Nenhuma menção ao pedido</strong> — mesmo que a criança toque no assunto, redirecione com carinho e continue ensinando.`}
    ])}
   `},
   {t:'📮 Avise rápido e conheça a única frase segura', html:`
-   <div class="card"><p>Você pode descobrir que existe um pedido pelos comentários do Client Service no perfil da criança no BO — não há nenhum sistema automático que avise você. Depois que você souber, o que você viu nas suas aulas é uma informação que o Client Service não tem de nenhuma outra forma.</p></div>
+   <div class="card"><p>Você pode descobrir se há um pedido de reembolso por meio dos comentários do Client Service no perfil do aluno, no BO. Não há nenhum sistema automático que envie esse aviso. Quando ficar sabendo, lembre-se de que as informações que você obteve durante as aulas são algo que o Client Service não tem como conseguir de outra forma.</p></div>
    ${numlist([
      'Deixe um comentário no BO no mesmo dia, com exatamente o que você observou — datas e detalhes, não impressões',
      'Inclua as palavras da própria família, literalmente, se você as tiver',
      'Avise seu Team Leader no mesmo dia',
      'Nunca confirme que um reembolso foi aprovado nem comente nenhum valor'
    ])}
-   ${co('co-ok','✅',`<p><strong>A mensagem que é sempre segura:</strong> <em>“O Client Service vai ajudar você com isso.”</em> É aí que termina a sua parte da conversa — o Client Service assume a partir daí.</p>`)}
+   ${co('co-ok','✅',`<p><strong>A mensagem que você sempre pode usar:</strong> <em>“O departamento de Atendimento ao Cliente vai ajudar você com isso.”</em> É nesse ponto que termina a sua participação na conversa e o Client Service assume o atendimento.</p>`)}
   `},
   {t:'🌱 Mantenha o cuidado depois', html:`
-   <div class="card"><p>Seja o pedido retirado, a criança continue no seu grupo ou passe para outro tutor ou formato, continue dando atenção extra nas próximas aulas. Uma reversão que se sustenta por uma aula e depois volta discretamente ao normal muitas vezes não se sustenta de jeito nenhum.</p></div>
+   <div class="card"><p>Independentemente de o pedido de reembolso ser retirado, de a criança continuar no seu grupo ou de passar para outro tutor ou formato, continue dando atenção extra nas aulas seguintes. Uma mudança positiva que dura apenas uma aula e depois dá lugar à rotina habitual dificilmente se mantém a longo prazo.</p></div>
   `}
  ]
 },
@@ -148,10 +148,10 @@ const CONTENT = {
  ],
  ix:{
   title:'Disciplina e flexibilidade — verificação do módulo',
-  instr:'70% para liberar o próximo módulo.',
+  instr:'Acerte 70% do quiz para liberar o próximo módulo.',
   items:[
-   {type:'choice', prompt:'Um aluno menor (6 a 8 anos) fica falando por cima da aula sobre assuntos sem relação. Qual é a melhor primeira atitude?', opts:['Uma ordem clara para parar de falar, repetida até ele obedecer','Esperar — normalmente isso passa sozinho','Redirecioná-lo para a tarefa e elogiar o comportamento desejado assim que ele aparecer'], correct:2, fb:'Com crianças menores, redirecionar para a atividade — e valorizar o bom comportamento no momento em que acontece — funciona melhor do que uma ordem seca.'},
-   {type:'choice', prompt:'Um aluno se recusa a fazer o exercício de narrativa de hoje, mas animaria com prazer outra coisa. O que você deve fazer?', opts:['Deixá-lo animar o que o motiva, desde que continue praticando a habilidade que está sendo ensinada','Insistir no exercício exatamente como está escrito, para o grupo ficar alinhado','Pular a atividade para esse aluno e seguir em frente'], correct:0, fb:'Ser flexível com o conteúdo, sem perder o objetivo de aprendizagem, mantém o aluno engajado e aprendendo.'},
+   {type:'choice', prompt:'Um aluno menor (6 a 8 anos) fica falando por cima da aula sobre assuntos sem relação. Qual é a melhor primeira atitude?', opts:['Uma ordem clara para parar de falar, repetida até ele obedecer','Esperar — normalmente isso passa sozinho','Redirecioná-lo para a tarefa e elogiar o comportamento desejado assim que ele aparecer'], correct:2, fb:'Com crianças menores, é mais eficaz redirecionar a atenção para a atividade e valorizar o bom comportamento assim que ele acontece do que dar uma ordem direta e seca.'},
+   {type:'choice', prompt:'Um aluno se recusa a fazer o exercício da narrativa da aula, mas animaria com prazer outra coisa. O que você deve fazer?', opts:['Deixá-lo animar o que o motiva, desde que continue praticando a habilidade que está sendo ensinada','Insistir no exercício exatamente como está escrito, para o grupo ficar alinhado','Pular a atividade para esse aluno e seguir em frente'], correct:0, fb:'Ser flexível com o conteúdo, sem perder o objetivo de aprendizagem, mantém o aluno engajado e aprendendo.'},
    {type:'choice', prompt:'Quando as regras da aula devem ser definidas?', opts:['Somente quando surgir um problema, para que pareçam relevantes','Desde a primeira aula — e conferindo se foram entendidas e aceitas','Uma vez por mês, como lembrete para o grupo todo'], correct:1, fb:'Regras definidas e confirmadas desde a primeira aula evitam a maior parte do que este módulo aborda.'},
    {type:'choice', prompt:'Por que informar à família os casos de silêncio persistente ou distração?', opts:['Porque os tutores não têm permissão para lidar com comportamento sozinhos','Somente quando isso começa a afetar as notas do aluno','Isso ajuda a construir um retrato mais completo do aluno, e os pais muitas vezes podem ajudar em casa'], correct:2, fb:'Informar não é uma forma de culpar ninguém — é dar aos pais uma visibilidade sobre a qual eles também podem agir.'}
   ]
@@ -189,7 +189,7 @@ const CONTENT = {
  ],
  ix:{
   title:'Prática: o que você diria?',
-  instr:'Agora vamos praticar alguns dos momentos difíceis mais comuns em uma aula online. Em cada caso, escolha o que você diria como tutor. Cada resposta vem acompanhada do motivo. 70% para liberar o próximo módulo.',
+  instr:'Agora vamos praticar alguns dos momentos difíceis mais comuns em uma aula online. Em cada caso, escolha o que você diria como tutor. Cada resposta vem acompanhada do motivo. Acerte 70% do quiz para liberar o próximo módulo.',
   items:[
    {type:'choice', prompt:`<img src="Pictures_T3/A%20student%20yells%20at%20the%20teacher.png" alt="Um aluno gritando" style="display:block;width:100%;max-height:210px;object-fit:contain;background:var(--surface2);border-radius:14px;margin:0 0 14px"><strong>😠 Um aluno grita com você.</strong> Você pede ao Diego (11 anos) que compartilhe a tela, e ele grita: <em>“Isso é muito idiota! Não vou fazer esse seu exercício chato!”</em> O resto do grupo fica em silêncio, observando. O que você diz?`,
     opts:['“Como você se atreve a falar assim comigo! Mais uma vez e você está fora desta aula.”','“Estou vendo que você está muito frustrado, Diego, e quero ajudar. Lembre-se da nossa regra: nesta aula, nós nos tratamos com respeito. Respire um pouco — depois me conte o que não está funcionando para você.”','“Tudo bem, então você não precisa fazer. Vamos continuar com os outros.”'],
@@ -234,11 +234,11 @@ const CONTENT = {
    ${co('co-idea','🍎',`<p>Fique atento a Mac + Safari em especial. Se um aluno com Mac não consegue fazer os botões responderem ou a tela não carrega, a solução quase sempre é: abrir a aula no Google Chrome. Indique às famílias o endereço google.com/chrome.</p>`)}
    <div class="card"><h4>O que cada curso realmente exige</h4><div class="tbl-wrap"><table>
    <tr><th>Curso</th><th>Requisito</th><th>Nível</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Drawing</td><td>Somente Chrome, sem nada para instalar — funciona em quase qualquer dispositivo</td><td>Fácil</td></tr>
-   <tr><td>Digital Creativity, Graphic Design, Illustration</td><td>Chrome + uma ferramenta de navegador (Canva, Krita) — verifique os requisitos de tamanho de tela/tablet</td><td>Verificar</td></tr>
+   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Desenho</td><td>Somente Chrome, sem nada para instalar — funciona em quase qualquer dispositivo</td><td>Fácil</td></tr>
+   <tr><td>Criatividade Digital, Design Gráfico, Ilustração</td><td>Chrome + uma ferramenta de navegador (Canva, Krita) — verifique os requisitos de tamanho de tela/tablet</td><td>Verificar</td></tr>
    <tr><td>Roblox Studio</td><td>Somente Windows ou Mac (sem tablet, sem Linux), 4 GB de RAM, Roblox Studio instalado antes da aula 1</td><td>Verificar</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac ou Linux, Java Edition recomendada, 4 GB de RAM, conta própria do Minecraft</td><td>Verificar</td></tr>
-   <tr><td>3D Modeling</td><td>Mínimo de 8 GB de RAM, mouse com roda de rolagem obrigatório, placa de vídeo dedicada recomendada</td><td>Exigente</td></tr>
+   <tr><td>Modelagem 3D</td><td>Mínimo de 8 GB de RAM, mouse com roda de rolagem obrigatório, placa de vídeo dedicada recomendada</td><td>Exigente</td></tr>
    <tr><td>Unity</td><td>8 GB de RAM obrigatórios, 10 GB de espaço livre, somente Windows ou Mac — sem Chromebook</td><td>Exigente</td></tr>
    </table></div></div>
   `},
@@ -270,7 +270,7 @@ const CONTENT = {
  ],
  ix:{
   title:'Problemas técnicos — verificação do módulo',
-  instr:'70% para liberar a lista de verificação final.',
+  instr:'Acerte 70% do quiz para liberar a lista de verificação final.',
   items:[
    {type:'choice', prompt:'Em um Mac, nenhum botão do aluno responde. Qual é a sua primeira atitude?', opts:['Pedir que ele abra a aula no Google Chrome','Presumir que ele perdeu o interesse e seguir em frente','Esperar a plataforma se resolver sozinha'], correct:0, fb:'O Safari é a causa mais comum de botões sem resposta em um Mac — trocar para o Chrome é a solução rápida.'},
    {type:'sort', prompt:'Que tipo de problema é este?', card:'A tela de um aluno fica travando e os botões não respondem.', zones:[
@@ -289,7 +289,7 @@ const CONTENT = {
 {id:'checklist', numLabel:'Lista de verificação final', emoji:'✅', color:'var(--coral)',
  title:'Lista de verificação final',
  desc:'Aqui não há quiz — apenas o essencial deste mini-treinamento, antes de você encerrá-lo.',
- obj:'Revise a lista de verificação abaixo. Este módulo não vale nota — leia e depois conclua o mini-treinamento.',
+ obj:'Revise o checklist abaixo. Este módulo não tem avaliação. Leia os itens e, em seguida, conclua o minitreinamento.',
  sections:[
   {t:'🛟 Se já existe um pedido de reembolso', html:`
    ${numlist([

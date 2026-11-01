@@ -66,7 +66,7 @@ const CONTENT = {
   buildModules(){
     return [
 {id:'intro', numLabel:'Pendahuluan', emoji:'🧩', color:'var(--coral)',
- title:'Mengapa Kamu di Sini',
+ title:'Kenapa Penting Memahaminya',
  desc:'Mengapa organisasi pelajaran dan kedisiplinan adalah alasan yang paling cepat bisa kamu perbaiki — dan aturan yang berlaku jika permintaan refund sudah masuk.',
  obj:'Memahami mengapa organisasi pelajaran dan kedisiplinan adalah alasan yang paling langsung berkaitan dengan caramu mengelola kelas, dan apa persisnya yang harus (dan tidak boleh) dilakukan jika permintaan refund sudah ada.',
  sections:[
@@ -89,7 +89,7 @@ const CONTENT = {
    ])}
   `},
   {t:'📮 Laporkan dengan cepat, dan ingat satu kalimat yang aman', html:`
-   <div class="card"><p>Kamu bisa tahu bahwa ada permintaan refund dari komentar Client Service di profil anak di BO — tidak ada sistem otomatis yang memberitahumu. Begitu kamu tahu, apa yang kamu lihat di pelajaranmu adalah informasi yang tidak bisa didapatkan Client Service dengan cara lain.</p></div>
+   <div class="card"><p>Aturan emasnya. Jika kamu tidak bisa memperbaikinya sendiri dalam 10 menit, jangan terus mencoba diam-diam. Komunikasikan → dokumentasikan → eskalasikan. Orang tua yang tahu apa yang terjadi akan percaya padamu. Orang tua yang tidak diberi tahu bisa saja memutuskan berhenti.</p></div>
    ${numlist([
      'Tinggalkan komentar di BO pada hari yang sama berisi persis apa yang kamu lihat — tanggal dan detail, bukan kesan',
      'Sertakan kata-kata keluarga itu sendiri, apa adanya, jika kamu punya',
@@ -151,9 +151,9 @@ const CONTENT = {
   instr:'70% untuk membuka modul berikutnya.',
   items:[
    {type:'choice', prompt:'Seorang siswa yang lebih kecil (6–8) terus bicara saat pelajaran tentang hal yang tidak berhubungan. Apa langkah pertama yang lebih baik?', opts:['Perintah tegas untuk berhenti bicara, diulang sampai dia mendengarkan','Menunggu saja — biasanya akan berhenti sendiri','Mengalihkannya ke tugas, dan memuji perilaku yang kamu inginkan begitu perilaku itu muncul'], correct:2, fb:'Dengan anak yang lebih kecil, mengalihkan ke aktivitas — dan menangkap perilaku baik tepat saat terjadi — lebih efektif daripada sekadar perintah.'},
-   {type:'choice', prompt:'Seorang siswa menolak mengikuti latihan bercerita hari ini tapi dengan senang hati mau menganimasikan hal lain. Apa yang sebaiknya kamu lakukan?', opts:['Membiarkannya menganimasikan hal yang membuatnya semangat, selama dia tetap melatih keterampilan yang sedang diajarkan','Bersikeras dengan latihan persis seperti yang tertulis, supaya grup tetap seragam','Melewatkan aktivitas itu untuk siswa tersebut dan lanjut'], correct:0, fb:'Fleksibilitas dalam konten, tanpa kehilangan tujuan pembelajaran, membuat siswa tetap terlibat dan tetap belajar.'},
+   {type:'choice', prompt:'Seorang siswa menolak mengikuti latihan sesuai cerita hari ini, tapi dengan senang hati mau menganimasikan hal lain. Apa yang sebaiknya kamu lakukan?', opts:['Membiarkannya menganimasikan hal yang membuatnya semangat, selama dia tetap melatih keterampilan yang sedang diajarkan','Bersikeras dengan latihan persis seperti yang tertulis, supaya grup tetap seragam','Melewatkan aktivitas itu untuk siswa tersebut dan lanjut'], correct:0, fb:'Fleksibilitas dalam konten, tanpa kehilangan tujuan pembelajaran, membuat siswa tetap terlibat dan tetap belajar.'},
    {type:'choice', prompt:'Kapan aturan kelas sebaiknya ditetapkan?', opts:['Hanya saat ada masalah, supaya terasa relevan','Sejak pelajaran pertama — dan dipastikan dipahami serta disetujui','Sebulan sekali, sebagai pengingat untuk seluruh grup'], correct:1, fb:'Aturan yang ditetapkan dan dikonfirmasi sejak pelajaran pertama mencegah sebagian besar hal yang dibahas di modul ini.'},
-   {type:'choice', prompt:'Mengapa kasus diam yang terus-menerus atau distraksi perlu dilaporkan kepada keluarga?', opts:['Karena tutor tidak boleh menangani perilaku siswa sendiri','Hanya jika mulai memengaruhi nilai siswa','Ini membangun gambaran yang lebih lengkap tentang siswa, dan orang tua sering kali bisa membantu di rumah'], correct:2, fb:'Melapor bukan soal mencari siapa yang salah — ini memberi orang tua gambaran yang juga bisa mereka tindak lanjuti.'}
+   {type:'choice', prompt:'Mengapa kasus di mana siswa diam terus-menerus atau terus terdistraksi perlu dilaporkan kepada keluarganya?', opts:['Karena tutor tidak boleh menangani perilaku siswa sendiri','Hanya jika mulai memengaruhi nilai siswa','Ini membangun gambaran yang lebih lengkap tentang siswa, dan orang tua sering kali bisa membantu di rumah'], correct:2, fb:'Melapor bukan soal mencari siapa yang salah — ini memberi orang tua gambaran yang juga bisa mereka tindak lanjuti.'}
   ]
  }
 },
@@ -192,19 +192,19 @@ const CONTENT = {
   instr:'Sekarang, yuk berlatih menghadapi beberapa momen sulit yang paling umum di kelas online. Untuk setiap kasus, pilih apa yang akan kamu katakan sebagai tutor. Setiap jawaban disertai alasannya. 70% untuk membuka modul berikutnya.',
   items:[
    {type:'choice', prompt:`<img src="Pictures_T3/A%20student%20yells%20at%20the%20teacher.png" alt="Seorang siswa berteriak" style="display:block;width:100%;max-height:210px;object-fit:contain;background:var(--surface2);border-radius:14px;margin:0 0 14px"><strong>😠 Seorang siswa berteriak kepadamu.</strong> Kamu meminta Diego (11) membagikan layarnya, dan dia berteriak: <em>“Ini bodoh banget! Aku nggak mau ngerjain latihanmu yang membosankan!”</em> Anggota grup lainnya terdiam dan memperhatikan. Apa yang kamu katakan?`,
-    opts:['“Jangan berani-berani bicara seperti itu kepadaku! Sekali lagi, kamu keluar dari kelas ini.”','“Aku bisa dengar kamu lagi kesal banget, Diego, dan aku ingin membantu. Ingat aturan kita: di kelas ini kita berbicara dengan saling menghormati. Tarik napas dulu — lalu ceritakan apa yang nggak berjalan baik buatmu.”','“Ya sudah, kamu nggak usah mengerjakannya. Kita lanjut saja dengan yang lain.”'],
+    opts:['“Jangan berani-berani bicara seperti itu kepadaku! Sekali lagi, kamu keluar dari kelas ini.”','Saya tau kamu pasti kesal sekali. Ingat aturan kita: di kelas ini kita bicara dengan saling menghormati. Tarik nafas dulu, terus coba jelaskan pelan-pelan apa kendalanya.”','“Ya sudah, kamu nggak usah mengerjakannya. Kita lanjut saja dengan yang lain.”'],
     correct:1,
     fb:'<strong>Mengapa ini berhasil:</strong> jawaban yang tenang melakukan tiga hal sekaligus — menyebutkan emosinya (sehingga Diego merasa didengar), kembali ke aturan kelas alih-alih kemarahanmu sendiri, dan membuka jalan kembali ke tugas. Membalas berteriak justru mencontohkan perilaku yang ingin kamu hentikan dan mengubah kelas menjadi panggung; mengalah mengajarkan seluruh grup bahwa berteriak bisa membebaskanmu dari tugas. Di kelas online kamu tidak bisa mendekati siswa, jadi nada bicaramu adalah satu-satunya alatmu. Jika berlanjut, bisukan dia sebentar, hubungi orang tuanya jika perlu, lalu laporkan kepada keluarga dan tinggalkan komentar di BO.'},
    {type:'choice', prompt:`<img src="Pictures_T3/A%20student%20bullies%20other%20students.png" alt="Seorang siswa mengejek siswa lain" style="display:block;width:100%;max-height:210px;object-fit:contain;background:var(--surface2);border-radius:14px;margin:0 0 14px"><strong>😈 Seorang siswa merundung teman sekelasnya.</strong> Saat Ana membagikan proyeknya, Tomás menyalakan mikrofon dan berkata <em>“Itu hal paling jelek yang pernah aku lihat”</em> — lalu menambahkan hinaan. Ana terdiam. Apa yang kamu katakan?`,
-    opts:['“Tomás, kamu itu tukang rundung dan seharusnya kamu malu di depan semua orang.”','“Ayolah, itu cuma bercanda — yuk lanjut, Ana.”','“Tomás, itu nggak boleh. Di kelas ini, hasil kerja semua orang dihargai. Aku bisukan mikrofonmu sebentar supaya Ana bisa menyelesaikan presentasinya — nanti kita bicara setelah kelas. Ana, silakan lanjut, aku suka banget warna-warna yang kamu pilih.”'],
+    opts:['“Tomás, kamu itu tukang rundung dan seharusnya kamu malu di depan semua orang.”','“Ayolah, itu cuma bercanda — yuk lanjut, Ana.”','Tomás, itu tidak boleh. Di kelas ini, kita menghargai hasil kerja semua orang. Saya matikan mikrofonmu sebentar supaya Ana bisa menyelesaikan presentasinya — nanti kita bicara setelah kelas. Ana, silakan lanjutkan, saya suka sekali warna-warna yang kamu pilih.”'],
     correct:2,
     fb:'<strong>Mengapa ini berhasil:</strong> tugas pertamamu adalah melindungi siswa yang menjadi sasaran. Membisukan Tomás langsung menghentikan hal yang menyakitkan tanpa perdebatan di depan umum, aturannya disampaikan dengan jelas (menghormati orang lain tidak bisa ditawar), dan kamu mengembalikan momen itu kepada Ana. “Itu cuma bercanda” memberi tahu seluruh grup bahwa perundungan ditoleransi; mempermalukan Tomás di depan semua orang justru memperburuk keadaan dan mempermalukan seorang anak, yang jarang mengubah perilaku. Setelah kelas: bicara dengannya secara pribadi, beri tahu keluarganya, dan tinggalkan komentar di BO. Jika terjadi lagi saat pelajaran, minta bantuan orang tuanya.'},
    {type:'choice', prompt:`<img src="Pictures_T3/A%20student%20cries%20because%20something%20isn%27t%20going%20well.png" alt="Seorang siswa menangis" style="display:block;width:100%;max-height:210px;object-fit:contain;background:var(--surface2);border-radius:14px;margin:0 0 14px"><strong>😢 Seorang siswa menangis karena ada yang tidak berjalan lancar.</strong> Lucía (8) menjalankan game-nya dan mendapat error untuk ketiga kalinya. Dia mulai menangis: <em>“Aku nggak bisa, aku payah.”</em> Apa yang kamu katakan?`,
-    opts:['“Nggak apa-apa banget, Lucía — error itu cara programmer belajar. Bahkan developer profesional pun dapat error setiap hari. Yuk kita lihat bareng-bareng dan cari tahu apa yang ingin disampaikan komputernya.”','“Jangan nangis, ini bukan masalah besar. Lihat, yang lain bisa — kamu juga pasti bisa.”','“Tenang, biar aku saja yang perbaiki supaya kita bisa lanjut.”'],
+    opts:['“Tidak apa-apa, Lucía. Programmer justru belajar dari error. Developer profesional pun mengalami error setiap hari. Yuk, kita lihat sama-sama dan cari tahu apa maksud pesan error-nya.”','“Jangan nangis, ini bukan masalah besar. Lihat, yang lain bisa — kamu juga pasti bisa.”','“Tenang, biar aku saja yang perbaiki supaya kita bisa lanjut.”'],
     correct:0,
     fb:'<strong>Mengapa ini berhasil:</strong> jawaban ini menganggap kesalahan sebagai hal yang wajar dan membingkainya sebagai bagian dari belajar — dan memang begitulah kenyataannya dalam pemrograman. Lucía juga tetap memegang kendali untuk memperbaikinya, dengan kamu di sampingnya, sehingga dia menutup momen itu dengan perasaan mampu. “Jangan nangis” mengabaikan perasaannya, dan membandingkannya dengan teman sekelas membuatnya lebih buruk. Memperbaikinya untuknya memang menghentikan tangisannya, tapi justru menguatkan keyakinannya bahwa dia tidak bisa. Di kelas online, membagikan layarnya dan menyelesaikannya bersama membuat dukunganmu terlihat dan terasa personal.'},
    {type:'choice', prompt:`<img src="Pictures_T3/A%20student%20refuses%20to%20work.png" alt="Seorang siswa menolak mengerjakan tugas" style="display:block;width:100%;max-height:210px;object-fit:contain;background:var(--surface2);border-radius:14px;margin:0 0 14px"><strong>😒 Seorang siswa menolak mengerjakan tugas.</strong> Semua sedang membuat animasi pelajaran hari ini. Sofía (12) menyalakan kameranya tapi tidak melakukan apa-apa dan bilang <em>“Aku lagi nggak mood.”</em> Apa yang kamu katakan?`,
-    opts:['“Kalau kamu nggak mengerjakan latihannya, aku harus memberi tahu orang tuamu.”','“Aku lihat kamu belum mulai — apa yang bikin susah? Gimana kalau kamu menganimasikan karakter yang benar-benar kamu suka? Tujuannya cuma untuk melatih teknik gerakannya.”','“Ya sudah — hari ini kamu lihat saja yang lain bekerja.”'],
+    opts:['“Kalau kamu nggak mengerjakan latihannya, aku harus memberi tahu orang tuamu.”','Saya lihat kamu belum mulai — ada yang bikin kamu kesulitan? Bagaimana kalau kamu menganimasikan karakter yang kamu suka? Yang penting, kamu tetap melatih teknik gerakannya.”','“Ya sudah — hari ini kamu lihat saja yang lain bekerja.”'],
     correct:1,
     fb:'<strong>Mengapa ini berhasil:</strong> rasa ingin tahu alih-alih ancaman membantu menemukan apa yang sebenarnya ada di balik penolakannya (bosan, kesulitan, lelah), dan menawarkan pilihan tetap menjaga tujuan pembelajaran sambil memberinya rasa memiliki atas tugasnya. Mengancam akan menghubungi orang tua menjadikanmu musuh dan mengubah penolakannya menjadi adu kuasa; membiarkannya menonton mengajarkan bahwa menolak itu berhasil. Jika penolakannya berulang di beberapa pelajaran, bicarakan dengan keluarga dan tinggalkan komentar di BO — itu pola yang perlu dilaporkan, bukan hukuman.'}
   ]
@@ -231,7 +231,7 @@ const CONTENT = {
      "Tablet / iPad untuk kursus seperti Roblox Studio atau Unity — kursus ini membutuhkan komputer sungguhan",
      "Menganggap masalah di Mac sebagai hilangnya minat sebelum memeriksa apakah penyebabnya hanya Safari"]
    )}
-   ${co('co-idea','🍎',`<p>Perhatikan khusus kombinasi Mac + Safari. Jika siswa pengguna Mac tidak bisa menekan tombol atau layarnya tidak termuat, solusinya hampir selalu: buka kelasnya di Google Chrome. Arahkan keluarga ke google.com/chrome.</p>`)}
+   ${co('co-idea','🍎',`<p>Perhatikan khususnya kombinasi Mac + Safari. Jika siswa pengguna Mac tidak bisa menekan tombol atau layarnya tidak termuat, solusinya hampir selalu: buka kelasnya di Google Chrome. Arahkan keluarga ke google.com/chrome.</p>`)}
    <div class="card"><h4>Apa yang sebenarnya dibutuhkan setiap kursus</h4><div class="tbl-wrap"><table>
    <tr><th>Kursus</th><th>Persyaratan</th><th>Tingkat</th></tr>
    <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Menggambar</td><td>Cukup Chrome, tidak perlu menginstal apa pun — berfungsi di hampir semua perangkat</td><td>Mudah</td></tr>
@@ -260,11 +260,11 @@ const CONTENT = {
    <p><strong>Setelah masalahnya selesai:</strong> beri tahu orang tua, dan tuntaskan komunikasinya — meskipun masalahnya tampak kecil.</p>`)}
   `},
   {t:'⚖️ Menjaga seluruh grup tetap belajar', html:`
-   <div class="card"><p>Kegagalannya bukan hanya pada masalah teknisnya — tapi tutor yang terlalu fokus pada masalah satu siswa sampai anggota grup lainnya kehilangan lima atau sepuluh menit pelajaran.</p></div>
+   <div class="card"><p>Masalahnya bukan hanya gangguan teknisnya — tapi juga saat tutor terlalu fokus pada masalah satu siswa sampai siswa lainnya kehilangan lima atau sepuluh menit pelajaran.</p></div>
    ${iconGrid([
      {ic:'⏱️', html:`<strong>Tetapkan batas waktu.</strong> Beri siswa yang bermasalah satu percobaan perbaikan cepat (ganti browser, mulai ulang), lalu lanjutkan pelajaran grup dan tindak lanjuti siswa itu setelahnya atau di antara aktivitas.`},
      {ic:'👥', html:`<strong>Beri grup sesuatu untuk dikerjakan</strong> begitu kamu mulai menangani masalahnya — jangan biarkan mereka hanya menatap layar yang diam.`},
-     {ic:'🫂', html:`<strong>Tetap tenang, dan terdengar tenang.</strong> Reaksimu adalah pelajarannya, bahkan sebelum masalahnya teratasi. Kalimat tenang seperti “ini kadang terjadi, yuk kita cari jalan keluarnya” menjaga suasana kelas tetap stabil.`}
+     {ic:'🫂', html:`<strong>Tetap tenang, dan terdengar tenang.</strong> Siswa belajar dari caramu bereaksi, bahkan sebelum masalahnya teratasi. Kalimat tenang seperti “ini kadang terjadi, yuk kita cari solusinya” menjaga suasana kelas tetap kondusif.`}
    ])}
   `}
  ],
@@ -305,7 +305,7 @@ const CONTENT = {
      'Di kelas yang sunyi, saya meminta dengan ramah untuk menyalakan kamera terlebih dahulu, lalu menawarkan cara aman lainnya untuk ikut serta — latar belakang yang mereka sukai, chat, partisipasi pribadi — tanpa tekanan',
      'Saat seorang siswa tidak terhubung dengan tugasnya, saya menyesuaikan tugas itu tanpa kehilangan tujuan pembelajaran',
      'Saya menenangkan diri sendiri dulu: saya mengambil jeda, menjaga suara tetap tenang dan tempo tetap stabil, dan tidak pernah mengikuti intensitas siswa',
-     'Saya tegas soal rasa hormat: jika seorang siswa menggunakan bahasa kasar atau menyerang teman sekelasnya, saya membisukannya sebentar untuk melindungi grup, dan kami berbicara setelah kelas',
+     'Saya tegas soal rasa hormat: jika seorang siswa menggunakan bahasa kasar atau menyerang teman sekelasnya, saya mematikan mikrofonnya sebentar untuk melindungi grup, dan kami berbicara setelah kelas',
      'Saat ada yang salah dalam sebuah tugas, saya menganggap kesalahan itu wajar dan memperlakukannya sebagai kesempatan untuk belajar',
      'Jika situasinya tidak bisa diredakan, saya meminta bantuan orang tua — bahkan saat pelajaran berlangsung — lalu setelahnya saya melaporkannya kepada keluarga dan meninggalkan komentar di BO',
      'Saya mengetes perangkat saya 30 menit sebelum kelas, dan saya menjaga grup tetap bekerja sementara saya memperbaiki masalah teknis satu siswa'

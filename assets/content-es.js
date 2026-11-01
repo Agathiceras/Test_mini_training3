@@ -68,14 +68,14 @@ const CONTENT = {
 {id:'intro', numLabel:'Introducción', emoji:'🧩', color:'var(--coral)',
  title:'Por qué estás aquí',
  desc:'Por qué la organización y la disciplina en clase son el motivo que puedes corregir más rápido — y las reglas que se aplican cuando ya ha llegado una solicitud de reembolso.',
- obj:'Entender por qué la organización y la disciplina en clase son el motivo que depende más directamente de cómo diriges el aula, y qué hacer (y qué no hacer) exactamente cuando ya existe una solicitud de reembolso.',
+ obj:'Entender por qué la organización y la disciplina en clase son el motivo que más depende de cómo diriges el aula, y qué hacer (y qué no hacer) exactamente cuando ya existe una solicitud de reembolso.',
  sections:[
   {t:'🧩 Dos extremos, una misma causa', html:`
    <div class="card"><p>Dos aulas que parecen muy distintas terminan señaladas por este mismo motivo: un aula que se siente caótica y un aula que se ha quedado en silencio. Ambas tienen que ver con lo mismo — si cada niño siente que la clase es un lugar seguro y estructurado en el que participar.</p></div>
    ${co('co-idea','🎯',`<p><strong>De todos los motivos de esta lista, este es el que depende más directamente del comportamiento del tutor — y, por tanto, el que puedes corregir más rápido.</strong> A diferencia de un nivel o de una necesidad especial, es una habilidad que puedes cambiar desde tu próxima clase, sin necesitar el permiso de nadie.</p>`)}
   `},
   {t:'🛟 Si ya existe una solicitud de reembolso', html:`
-   <div class="card"><p>Todo lo anterior trata de detectarlo pronto. Pero puede que estés abriendo este entrenamiento porque una familia <strong>ya</strong> ha pedido un reembolso. Las reglas de abajo se aplican sea cual sea el motivo — léelas primero y usa el resto del entrenamiento para entender qué llevó hasta aquí y qué puedes seguir haciendo en la clase.</p></div>
+   <div class="card"><p>Todo lo anterior trata de detectarlo pronto. Pero puede que estés abriendo este entrenamiento porque una familia <strong>ya</strong> ha pedido un reembolso. Las reglas de abajo se aplican sea cual sea el motivo — léelas primero y usa el resto del entrenamiento para entender qué te llevó hasta aquí y qué puedes seguir haciendo en la clase.</p></div>
    ${co('co-idea','💡',`<p><strong>La solicitud la crea Servicio al Cliente, no tú</strong> — esa parte no está en tus manos. Lo que sigue siendo tuyo es todo lo que sucede en la clase a partir de ahora, y no es poco.</p>`)}
    ${co('co-danger','🤐',`<p><strong>No digas nada sobre la solicitud en sí</strong> — ni al niño ni a la familia — a menos que Servicio al Cliente te pida expresamente decir algo concreto. Tu trabajo ahora es la clase, no la conversación.</p>`)}
   `},
@@ -114,7 +114,7 @@ const CONTENT = {
    <div class="card"><h4>Niños pequeños (6–8)</h4><ul>
     <li>Convierte la norma en un juego: el «volumen de voz» como una perilla que puedes señalar, no como un regaño</li>
     <li>Redirige con una tarea, no con una orden: «enséñame tu pantalla y construyamos esto juntos» funciona mejor que «deja de hablar»</li>
-    <li>Elogia el comportamiento que quieres ver, de inmediato y de forma concreta, en el momento en que ocurre</li>
+    <li>Elogia de forma concreta e inmediata el comportamiento que quieres ver</li>
    </ul></div>
    <div class="card"><h4>Estudiantes mayores (12+)</h4><ul>
     <li>Nómbralo directamente y en pocas palabras, en privado si es posible: «mantengamos el chat en el tema para que todos puedan seguir la clase»</li>
@@ -131,7 +131,7 @@ const CONTENT = {
      {ic:'3️⃣', label:'Conócelo — sus intereses son tu puerta de entrada'},
      {ic:'4️⃣', label:'¿Sigue sin funcionar? Prueba la participación en privado, siempre con una frase que deje claro que es un espacio seguro'}
    ])}
-   ${co('co-idea','💡',`<p><strong>Una idea concreta:</strong> deja que mantenga la cámara apagada pero que ponga de fondo algo que le guste — o, en un curso de diseño o arte, invítalo a dibujar algo que lo represente (no literalmente a sí mismo) para usarlo de fondo. Invita a todo el grupo a hacer lo mismo, para que se sienta como algo compartido y no como que lo señalas.</p>`)}
+   ${co('co-idea','💡',`<p><strong>Una idea concreta:</strong> deja que mantenga la cámara apagada pero que ponga de fondo algo que le guste — o, en un curso de diseño o arte, invítalo a dibujar algo que lo represente (no necesariamente un autorretrato) para usarlo de fondo. Invita a todo el grupo a hacer lo mismo, para que se sienta como algo compartido y no como que lo señalas.</p>`)}
    <div class="card"><h4>Ejemplos de frases según la edad</h4>
    <p><strong>Pequeños (6–8):</strong> <em>«No tienes que mostrar tu cara si no quieres — ¡pero me encantaría ver qué fondo elegiste! ¿Me cuentas qué es?»</em></p>
    <p><strong>Mayores (12+):</strong> <em>«Sin presión con la cámara — cuando te sientas listo. Mientras tanto, si te resulta más fácil, puedes escribir en el chat.»</em></p></div>
@@ -171,7 +171,7 @@ const CONTENT = {
    ${iconGrid([
      {ic:'📢', html:`<strong>Indisciplina.</strong> Responde con calma y naturalidad, sin brusquedad ni fastidio — un tutor irritado hace que un aula ruidosa se descontrole más; uno sereno la calma.`},
      {ic:'😠', html:`<strong>Un estudiante agresivo.</strong> Baja tu propio tono y ritmo, no imites su intensidad. Primero regúlate tú, y después aborda el comportamiento.`},
-     {ic:'📱', html:`<strong>Un estudiante distraído.</strong> Redirige con curiosidad, no con frustración — «¿qué te está llamando la atención ahora mismo?» se recibe de una forma muy distinta a un suspiro.`},
+     {ic:'📱', html:`<strong>Un estudiante distraído.</strong> Redirige con curiosidad, no con frustración — «¿qué te está llamando la atención ahora mismo?» se recibe de una forma muy distinta que un suspiro.`},
      {ic:'🤐', html:`<strong>Un estudiante en silencio.</strong> La paciencia transmite seguridad. La impaciencia visible transmite presión, y la presión hace que un niño callado se cierre todavía más.`}
    ])}
   `},
@@ -256,7 +256,7 @@ const CONTENT = {
   `},
   {t:'🚨 Cómo reaccionar — el protocolo', html:`
    ${co('co-danger','🚨',`<p><strong>Primer problema en una clase:</strong> intenta resolverlo en los primeros 10 minutos. Si sigue sin funcionar, avisa a tu Team Leader ese mismo día — decidirá una opción para recuperar la clase. Escribe a los padres en menos de 30 minutos, con calidez, diciéndoles que ya lo has comunicado a tu equipo.</p>
-   <p><strong>Segunda clase seguida con un problema:</strong> abre un ticket con Servicio al Cliente ese mismo día. Escribe a los padres para decirles que lo has escalado y que alguien se pondrá en contacto con ellos sobre una clase de recuperación.</p>
+   <p><strong>Segunda clase seguida con un problema:</strong> abre un ticket con Servicio al Cliente ese mismo día. Escribe a los padres para decirles que lo has escalado y que alguien se pondrá en contacto con ellos para una clase de recuperación.</p>
    <p><strong>Cuando se resuelva:</strong> avísales a los padres y cierra el tema — aunque el problema pareciera pequeño.</p>`)}
   `},
   {t:'⚖️ Mantener a todo el grupo aprendiendo', html:`
