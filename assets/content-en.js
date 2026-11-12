@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"Running a <span class=\"h-pill\">Well-Organised</span> Lesson",
     heroIntro:"You have received this training because you have students who have requested a refund due to disorganization or discipline issues in class. Here, we'll show you what you can do as a tutor and how to handle these situations.",
-    heroWork:"Work through 5 short modules. Each module check needs 70%+ to unlock the next. About 25–30 minutes total.",
+    heroWork:"Work through 5 short modules. Each module check needs 70%+ to unlock the next. About 30–35 minutes total.",
     startBtn:"🚀 Start Training",
     pathLabel:'Your learning path',
     devTitle:'Dev: unlock all modules for review',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Module 3', emoji:'🔧', color:'var(--coral)',
  title:'Technical Problems and Classroom Balance',
- desc:'Why disorder is often a technical problem in disguise, what prevents most of it, and how to keep the whole group learning while you fix one student\'s issue.',
- obj:'Prevent most technical issues before they start, follow a clear protocol when they happen, and keep the rest of the group engaged while resolving one student\'s problem.',
+ desc:'Why disorder is often a technical problem in disguise, how to keep the whole group learning while you fix one student\'s issue, a plan for fast finishers, attention for every child in a large group, and what to do when a student joins the lesson late.',
+ obj:'Prevent most technical issues before they start, follow a clear protocol when they happen, keep fast finishers busy while you help others, give every child attention in a large group, and help a student who arrives late catch up without stopping the group.',
  sections:[
   {t:'⚖️ Why this belongs here', html:`
    <div class="card"><p>Technical problems often lead to disorganization in the classroom and, as a result, students get bored.</p>
@@ -279,6 +279,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Give the group something to do</strong> the moment you start troubleshooting — don't leave them staring at a static screen.`},
      {ic:'🫂', html:`<strong>Stay calm, out loud.</strong> Your reaction is the lesson, before the fix is. A calm "this happens sometimes, let's work around it" keeps the room steady.`}
    ])}
+  `},
+  {t:'⚡ Nobody waits: a plan for fast finishers', html:`
+   <div class="card"><p>Whenever you stop to help one student — with a technical issue or a difficult step — someone else finishes and has nothing to do. A student who waits gets bored, and a bored student starts talking, leaves, or decides the lesson is a waste of time. Families notice: <em>"the class spends most of the time waiting while the tutor helps the others."</em> The fix is to have the next step ready <strong>before</strong> anyone needs it.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Done with the task?'},
+     {ic:'⭐', label:'1. The extra activity in the lesson'},
+     {ic:'🎨', label:'2. Make it yours: a variation or personal touch'},
+     {ic:'🤝', label:'3. Help a classmate — when you ask them'},
+     {ic:'📚', label:'4. A head start on the homework'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Put the ladder on screen or in the chat</strong> at the start of the practice: <em>"Finished? 1 → extra challenge · 2 → add your own twist · 3 → start the homework."</em> Students move on without waiting for you.`},
+     {ic:'🎯', html:`<strong>Use what the manual already has.</strong> Many lessons include extra activities — prepare them the day before, so they're ready to drop in.`},
+     {ic:'🤝', html:`<strong>Peer helpers, with rules.</strong> A fast student can help a classmate — you ask them, they explain without typing for the classmate, and the helper gets credit too.`},
+     {ic:'🖥️', html:`<strong>Check in briefly between helps.</strong> <em>"Ana, show me your screen for ten seconds — great, now try challenge 2."</em> It keeps the fast ones seen, not just busy.`}
+   ])}
+  `},
+  {t:'👀 Every child, every lesson — attention in a large group', html:`
+   <div class="card"><p>In a big group it's easy to spend the lesson with the students who talk the most — and for a quiet child to go a whole hour without being addressed. To that child, and to their parent, it feels like <em>"nobody notices him"</em>. Attention doesn't need more time; it needs a system.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Use names, often.</strong> Aim to address every student by name at least twice in each lesson — in the warm-up, and again during the practice.`},
+     {ic:'🔄', html:`<strong>Rotate the turns.</strong> Share screens in turns, take answers from different students, and use a random picker so it feels fair — not always the same fast hands.`},
+     {ic:'👍', html:`<strong>Quick group check-ins.</strong> <em>"Thumbs up when you've finished step 2."</em> In one glance you see who is stuck, without waiting for them to ask.`},
+     {ic:'💬', html:`<strong>Private check-ins for quiet students.</strong> A short private chat message — <em>"How's it going? Show me where you are"</em> — reaches students who would never ask in front of everyone.`},
+     {ic:'📝', html:`<strong>Keep a quick mental (or paper) list.</strong> Before the wrap-up, check: is there anyone I haven't spoken to today? Go to them first.`},
+     {ic:'🙋', html:`<strong>Answer every raised hand,</strong> even if only to say <em>"I've seen you, Leo — you're next."</em> An ignored hand is one of the fastest ways to lose a child.`}
+   ])}
+  `},
+  {t:'⏰ A student joins the lesson late', html:`
+   <div class="card"><p>Students arrive late for many reasons: school ran over, the connection failed, the link got lost. If you restart every time someone joins, the whole group loses time. If nobody helps the latecomer, they spend the rest of the lesson lost, and that's what they tell their parents. The goal is to get them working in a couple of minutes, without stopping everyone else.</p></div>
+   ${timeline([
+     {ic:'👋', label:'When they join', items:[
+       '<strong>Greet them briefly, by name:</strong> <em>"Welcome, Leo! We\'re on step 3: making the character jump."</em>',
+       '<strong>Don\'t ask why they\'re late in front of the group,</strong> and don\'t restart the explanation for them.'
+     ]},
+     {ic:'💬', label:'In the first minutes', items:[
+       '<strong>Post a one-line recap in the chat:</strong> what we did, what we\'re doing now and where to click.',
+       '<strong>Give the group their next task first,</strong> then check privately with the latecomer: <em>"Share your screen for a moment, let me show you the step you missed."</em>',
+       '<strong>Pair them with a buddy</strong> if the step is long, and check on them again a few minutes later.'
+     ]},
+     {ic:'📚', label:'After the lesson', items:[
+       '<strong>If they missed a key part,</strong> share the materials (and the recording, if there is one) and say what to review.',
+       '<strong>If it happens again,</strong> message the parent the same day, kindly, to find out why, and leave a comment in BO. If the reason is the schedule, tell your Team Leader: a schedule change isn\'t yours to decide.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Prepare it before the lesson.</strong> Write one short recap line for each phase of your lesson plan. When someone arrives late, you only have to paste it in the chat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>Late because of a technical problem?</strong> Help them get in, then follow the technical protocol above: 10 minutes to fix it, then communicate, document and escalate.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +342,10 @@ const CONTENT = {
    {type:'sort', prompt:'Which kind of problem is this?', card:'A student keeps unmuting to talk about unrelated things during the explanation.', zones:[
      {label:'⚖️ Discipline problem', fb:'Correct — this is a classroom-management pattern to redirect, not a technical symptom.'},
      {label:'🔧 Technical problem', fb:'Not quite — this is a discipline pattern, not a device or connection issue.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'You\'re helping one student fix an error, and three others have already finished. What should already be in place?', opts:['A "Finished?" ladder on screen or in the chat: extra challenge, a personal twist, then a head start on the homework','Nothing — they can wait a few minutes','Ask them to watch while you fix the error'], correct:0, fb:'With the next steps ready before anyone needs them, nobody waits — and waiting is what turns a fast student into a bored one.'},
+   {type:'choice', prompt:'In a group of ten, a quiet student hasn\'t said a word all lesson. It\'s almost time for the wrap-up. What do you do?', opts:['Leave them alone — they\'ll talk when they\'re ready','Speak to them by name before the wrap-up: a private check-in or a turn to share their screen','Ask them a hard question in front of everyone so they take part'], correct:1, fb:'Check your mental list before the wrap-up: anyone you haven\'t spoken to goes first. A private check-in or an easy turn makes them feel seen without pressure.'},
+   {type:'sort', prompt:'Is this a good move when a student joins the lesson late?', card:'A student joins 15 minutes late. You stop the group and repeat the whole explanation from the beginning.', zones:[{label:'💎 Good move', fb:'Not quite — the rest of the group waits while you repeat everything. Greet the student, post a one-line recap in the chat, and help them privately once the group is working.'},{label:'🗑️ Not a good move', fb:'Correct — a quick welcome, a one-line recap in the chat and a short private check get the latecomer working without stopping everyone.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +371,11 @@ const CONTENT = {
      'I\'m firm on respect: if a student uses obscene language or attacks a classmate, I mute them for a moment to protect the group, and we talk after class',
      'When something goes wrong in a task, I normalise the mistake and treat it as a chance to learn',
      'If a situation can\'t be settled, I ask the parent for help — even during the lesson — and afterwards I report it to the family and leave a comment in BO',
-     'I test my setup 30 minutes before class, and I keep the group working while I fix one student\'s technical issue'
+     'I test my setup 30 minutes before class, and I keep the group working while I fix one student\'s technical issue',
+     'I put a "Finished?" ladder on screen or in the chat — extra activity, a personal twist, helping a classmate, a head start on homework — so nobody waits',
+     'I address every student by name at least twice per lesson, rotate turns, and check before the wrap-up who I haven\'t spoken to yet',
+     'I answer every raised hand, and I use private check-ins for quiet students',
+     'When a student joins the lesson late, I greet them briefly, post a one-line recap in the chat and help them privately once the group is working — and if it keeps happening, I message the parent and leave a comment in BO'
    ])}
   `},
   {t:'', html:`
