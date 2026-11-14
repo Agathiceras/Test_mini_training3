@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-entrenamiento",
     heroTitle:"Dirigir una clase <span class=\"h-pill\">bien organizada</span>",
     heroIntro:"Has recibido este entrenamiento porque tienes estudiantes que han solicitado un reembolso por desorganización o problemas de disciplina en clase. Aquí te mostraremos qué puedes hacer como tutor y cómo manejar estas situaciones.",
-    heroWork:"Completa 5 módulos cortos. Cada comprobación de módulo requiere un 70 % o más para desbloquear el siguiente. En total, unos 25–30 minutos.",
+    heroWork:"Completa 5 módulos cortos. Necesitas obtener al menos un 70 % en la evaluación de cada módulo para desbloquear el siguiente. Duración total aproximada: 30–35 minutos.",
     startBtn:"🚀 Comenzar el entrenamiento",
     pathLabel:'Tu ruta de aprendizaje',
     devTitle:'Dev: desbloquear todos los módulos para revisión',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Módulo 3', emoji:'🔧', color:'var(--coral)',
  title:'Problemas técnicos y equilibrio en el aula',
- desc:'Por qué el desorden muchas veces es un problema técnico disfrazado, qué evita la mayoría de ellos y cómo mantener a todo el grupo aprendiendo mientras resuelves el problema de un estudiante.',
- obj:'Prevenir la mayoría de los problemas técnicos antes de que aparezcan, seguir un protocolo claro cuando ocurren y mantener al resto del grupo involucrado mientras resuelves el problema de un estudiante.',
+ desc:'Por qué el desorden suele ser un problema técnico disfrazado, cómo mantener a todo el grupo aprendiendo mientras resuelves el problema de un estudiante, un plan para quienes terminan rápido, cómo darle atención a cada niño en un grupo grande y qué hacer cuando un estudiante se une tarde a la clase.',
+ obj:'Prevenir la mayoría de los problemas técnicos antes de que ocurran, seguir un protocolo claro cuando suceden, mantener ocupados a quienes terminan rápido mientras ayudas a otros, dar atención a cada niño en un grupo grande y ayudar a un estudiante que llega tarde a ponerse al día sin detener al grupo.',
  sections:[
   {t:'⚖️ Por qué esto va aquí', html:`
    <div class="card"><p>Los problemas técnicos suelen provocar desorganización en el aula y, como consecuencia, los estudiantes se aburren.</p>
@@ -279,6 +279,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Dale al grupo algo que hacer</strong> en cuanto empieces a resolver el problema — no los dejes mirando una pantalla quieta.`},
      {ic:'🫂', html:`<strong>Mantén la calma, en voz alta.</strong> Tu reacción es la lección, antes que la solución. Un tranquilo «esto pasa a veces, vamos a buscarle la vuelta» mantiene el aula en calma.`}
    ])}
+  `},
+  {t:'⚡ Nadie espera: un plan para quienes terminan rápido', html:`
+   <div class="card"><p>Cada vez que te detienes a ayudar a un estudiante, ya sea con un problema técnico o con un paso difícil, otro termina y se queda sin nada que hacer. Un estudiante que espera se aburre, y un estudiante aburrido empieza a conversar, se va o decide que la clase es una pérdida de tiempo. Las familias lo notan: <em>«la clase pasa la mayor parte del tiempo esperando mientras el tutor ayuda a los demás»</em>. La solución es tener el siguiente paso listo <strong>antes</strong> de que alguien lo necesite.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'¿Terminaste la actividad?'},
+     {ic:'⭐', label:'1. La actividad adicional de la clase'},
+     {ic:'🎨', label:'2. Hazlo tuyo: una variación o un toque personal'},
+     {ic:'🤝', label:'3. Ayuda a un compañero, cuando se te pida'},
+     {ic:'📚', label:'4. Adelanta la tarea'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Muestra la escalera en la pantalla o en el chat</strong> al comenzar la práctica: <em>«¿Terminaste? 1 → desafío adicional · 2 → agrega tu propio toque · 3 → empieza la tarea»</em>. Los estudiantes avanzan sin tener que esperarte.`},
+     {ic:'🎯', html:`<strong>Aprovecha lo que ya trae el manual.</strong> Muchas clases incluyen actividades adicionales: prepáralas el día anterior para tenerlas listas.`},
+     {ic:'🤝', html:`<strong>Ayudantes entre compañeros, con reglas.</strong> Un estudiante que termina rápido puede ayudar a un compañero: tú se lo pides, explica sin escribir por el compañero y el ayudante también recibe reconocimiento.`},
+     {ic:'🖥️', html:`<strong>Haz seguimientos breves entre una ayuda y otra.</strong> <em>«Ana, muéstrame tu pantalla durante diez segundos... excelente, ahora prueba el desafío 2».</em> Así quienes terminan rápido se sienten vistos, no solo ocupados.`}
+   ])}
+  `},
+  {t:'👀 Cada niño, cada clase: atención en un grupo grande', html:`
+   <div class="card"><p>En un grupo grande es fácil pasar la clase con los estudiantes que más hablan, y que un niño callado pase una hora entera sin que nadie se dirija a él. Para ese niño, y para sus padres, se siente como si <em>«nadie lo notara»</em>. La atención no requiere más tiempo; requiere un sistema.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Usa los nombres con frecuencia.</strong> Procura dirigirte a cada estudiante por su nombre al menos dos veces en cada clase: durante el calentamiento y de nuevo durante la práctica.`},
+     {ic:'🔄', html:`<strong>Rota los turnos.</strong> Comparte pantallas por turnos, recibe respuestas de distintos estudiantes y usa un selector aleatorio para que se sienta justo, en lugar de que siempre participen los mismos.`},
+     {ic:'👍', html:`<strong>Chequeos rápidos con todo el grupo.</strong> <em>«Pulgar arriba cuando hayas terminado el paso 2».</em> De un vistazo ves quién está atascado, sin esperar a que lo diga.`},
+     {ic:'💬', html:`<strong>Chequeos privados con los estudiantes callados.</strong> Un mensaje privado breve en el chat —<em>«¿Cómo vas? Muéstrame en qué punto estás»</em>— llega a estudiantes que nunca preguntarían frente a todos.`},
+     {ic:'📝', html:`<strong>Lleva una lista rápida, mental o en papel.</strong> Antes del cierre, verifica: ¿hay alguien con quien no haya hablado hoy? Atiéndelo primero.`},
+     {ic:'🙋', html:`<strong>Responde a cada mano levantada,</strong> aunque sea para decir <em>«Te vi, Leo: eres el siguiente».</em> Una mano ignorada es una de las maneras más rápidas de perder a un niño.`}
+   ])}
+  `},
+  {t:'⏰ Un estudiante se une tarde a la clase', html:`
+   <div class="card"><p>Los estudiantes llegan tarde por muchas razones: la escuela se alargó, falló la conexión o se perdió el enlace. Si reinicias la clase cada vez que alguien se une, todo el grupo pierde tiempo. Si nadie ayuda al que llegó tarde, pasa el resto de la clase perdido, y eso es lo que les cuenta a sus padres. El objetivo es que empiece a trabajar en un par de minutos, sin detener a los demás.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Cuando se une', items:[
+       '<strong>Salúdalo brevemente por su nombre:</strong> <em>«¡Bienvenido, Leo! Estamos en el paso 3: hacer que el personaje salte».</em>',
+       '<strong>No le preguntes por qué llegó tarde frente al grupo</strong> y no reinicies la explicación para él.'
+     ]},
+     {ic:'💬', label:'Durante los primeros minutos', items:[
+       '<strong>Publica un resumen de una línea en el chat:</strong> qué hicimos, qué estamos haciendo ahora y dónde hacer clic.',
+       '<strong>Primero asigna al grupo su siguiente actividad</strong> y luego revisa en privado con quien llegó tarde: <em>«Comparte tu pantalla un momento, te muestro el paso que te perdiste».</em>',
+       '<strong>Asígnale un compañero de apoyo</strong> si el paso es largo y vuelve a revisar cómo va unos minutos después.'
+     ]},
+     {ic:'📚', label:'Después de la clase', items:[
+       '<strong>Si se perdió una parte clave,</strong> comparte los materiales (y la grabación, si existe) e indica qué debe repasar.',
+       '<strong>Si vuelve a ocurrir,</strong> escribe a los padres el mismo día, con amabilidad, para saber el motivo, y deja un comentario en BO. Si la razón es el horario, informa a tu Team Leader: cambiar el horario no es una decisión tuya.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Prepáralo antes de la clase.</strong> Escribe una línea breve de resumen para cada fase de tu plan de clase. Cuando alguien llegue tarde, solo tendrás que pegarla en el chat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>¿Llegó tarde por un problema técnico?</strong> Ayúdalo a entrar y luego sigue el protocolo técnico anterior: 10 minutos para resolverlo y después comunicar, documentar y escalar.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +342,10 @@ const CONTENT = {
    {type:'sort', prompt:'¿Qué tipo de problema es este?', card:'Un estudiante activa una y otra vez su micrófono para hablar de cosas que no tienen que ver durante la explicación.', zones:[
      {label:'⚖️ Problema de disciplina', fb:'Correcto — es un patrón de manejo del aula que hay que redirigir, no un síntoma técnico.'},
      {label:'🔧 Problema técnico', fb:'No exactamente — es un patrón de disciplina, no un problema del dispositivo ni de la conexión.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Estás ayudando a un estudiante a resolver un error y otros tres ya terminaron. ¿Qué debería estar listo?', opts:['Una escalera de «¿Terminaste?» en la pantalla o en el chat: desafío adicional, un toque personal y luego adelantar la tarea','Nada: pueden esperar unos minutos','Pedirles que observen mientras resuelves el error'], correct:0, fb:'Con los siguientes pasos listos antes de que alguien los necesite, nadie espera, y esperar es lo que convierte a un estudiante rápido en uno aburrido.'},
+   {type:'choice', prompt:'En un grupo de diez, un estudiante callado no ha dicho una palabra durante toda la clase. Casi es hora del cierre. ¿Qué haces?', opts:['Lo dejas tranquilo: hablará cuando esté listo','Te diriges a él por su nombre antes del cierre: con un chequeo privado o dándole el turno para compartir su pantalla','Le haces una pregunta difícil frente a todos para que participe'], correct:1, fb:'Revisa tu lista mental antes del cierre: con quien no hayas hablado va primero. Un chequeo privado o un turno sencillo hace que se sienta visto sin presión.'},
+   {type:'sort', prompt:'¿Es una buena decisión cuando un estudiante se une tarde a la clase?', card:'Un estudiante se une 15 minutos tarde. Detienes al grupo y repites toda la explicación desde el principio.', zones:[{label:'💎 Buena decisión', fb:'No exactamente. El resto del grupo espera mientras repites todo. Saluda al estudiante, publica un resumen de una línea en el chat y ayúdalo en privado cuando el grupo ya esté trabajando.'},{label:'🗑️ Mala decisión', fb:'¡Correcto! Una bienvenida rápida, un resumen de una línea en el chat y una breve revisión privada hacen que quien llegó tarde empiece a trabajar sin detener a los demás.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +371,11 @@ const CONTENT = {
      'Soy firme con el respeto: si un estudiante usa lenguaje obsceno o ataca a un compañero, lo silencio un momento para proteger al grupo, y hablamos después de clase',
      'Cuando algo sale mal en una tarea, normalizo el error y lo trato como una oportunidad para aprender',
      'Si una situación no se calma, pido ayuda a los padres — incluso durante la clase — y después lo reporto a la familia y dejo un comentario en BO',
-     'Pruebo mi equipo 30 minutos antes de la clase, y mantengo al grupo trabajando mientras resuelvo el problema técnico de un estudiante'
+     'Pruebo mi equipo 30 minutos antes de la clase, y mantengo al grupo trabajando mientras resuelvo el problema técnico de un estudiante',
+     'Muestro en la pantalla o en el chat una escalera de «¿Terminaste?» (actividad adicional, un toque personal, ayudar a un compañero y adelantar la tarea) para que nadie espere.',
+     'Me dirijo a cada estudiante por su nombre al menos dos veces por clase, roto los turnos y reviso antes del cierre con quién aún no he hablado.',
+     'Respondo a cada mano levantada y uso chequeos privados con los estudiantes callados.',
+     'Cuando un estudiante se une tarde a la clase, lo saludo brevemente, publico un resumen de una línea en el chat y lo ayudo en privado cuando el grupo ya está trabajando; y si sigue ocurriendo, escribo a los padres y dejo un comentario en BO.'
    ])}
   `},
   {t:'', html:`

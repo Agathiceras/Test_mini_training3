@@ -237,23 +237,21 @@ const CONTENT = {
    <div class="card"><p>Often, the technical problems students encounter in class are related to the fact that they are using a browser other than Google Chrome or the wrong devices for the course, such as trying to watch the class on a tablet, cell phone, or iPad. That's why it's important for you to know the minimum requirements so you can help them.</p></div>
    ${doavoid(
     ["Google Chrome, updated — the only fully compatible browser",
-     "At least 4 GB RAM (8 GB for Blender or Unity)",
+     "At least 4 GB RAM (8 GB for Blender)",
      "A stable connection, minimum 10 Mbps — a wired connection beats Wi-Fi when possible",
-     "At least 5 GB of free storage — Unity and Blender need considerably more"],
+     "At least 5 GB of free storage — Blender needs considerably more"],
     ["Safari — known bugs with the Kodland platform since the last update: buttons that don't respond, screens that don't load, errors on entry",
-     "Tablets / iPads for courses like Roblox Studio or Unity — they need a real computer",
+     "Tablets / iPads for courses like Roblox Studio — they need a real computer",
      "Assuming a Mac problem is disengagement before checking whether it's simply Safari"]
    )}
    ${co('co-idea','🍎',`<p>Watch for Mac + Safari specifically. If a Mac student can't get buttons to respond or the screen won't load, the fix is almost always: open the class in Google Chrome instead. Point families to google.com/chrome.</p>`)}
    <div class="card"><h4>What each course actually needs</h4><div class="tbl-wrap"><table>
    <tr><th>Course</th><th>Requirement</th><th>Level</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Drawing</td><td>Chrome only, nothing to install — works on almost any device</td><td>Easy</td></tr>
-   <tr><td>Digital Creativity, Graphic Design, Illustration</td><td>Chrome + a browser tool (Canva, Krita) — check screen size/tablet requirements</td><td>Check</td></tr>
+   <tr><td>Python 1 / Pro</td><td>Chrome only, nothing to install — works on almost any device</td><td>Easy</td></tr>
+   <tr><td>Digital Creativity, Graphic Design</td><td>Chrome + a browser tool (Canva, Krita) — check screen size/tablet requirements</td><td>Check</td></tr>
    <tr><td>Roblox Studio</td><td>Windows or Mac only (no tablet, no Linux), 4 GB RAM, Roblox Studio installed before lesson 1</td><td>Check</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac or Linux, Java Edition recommended, 4 GB RAM, own Minecraft account</td><td>Check</td></tr>
-   <tr><td>3D Modeling</td><td>8 GB RAM minimum, mouse with scroll wheel required, dedicated GPU recommended</td><td>Demanding</td></tr>
-   <tr><td>Unity</td><td>8 GB RAM mandatory, 10 GB free space, Windows or Mac only — no Chromebook</td><td>Demanding</td></tr>
-   </table></div></div>
+   <tr><td>3D Modeling</td><td>8 GB RAM minimum, mouse with scroll wheel required, dedicated GPU recommended</td><td>Demanding</td></tr>   </table></div></div>
   `},
   {t:'🧑‍💻 Technical issues with tutors', html:`
    <div class="card"><p>The same care applies to your own setup — a tutor's technical issue can stall a lesson just as much as a student's.</p></div>

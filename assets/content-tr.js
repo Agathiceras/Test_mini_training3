@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini Eğitim",
     heroTitle:"<span class=\"h-pill\">İyi Organize Edilmiş</span> Bir Ders Yürütmek",
     heroIntro:"Bu eğitimi, derste düzensizlik veya disiplin sorunları nedeniyle iade talep eden öğrencileriniz olduğu için alıyorsunuz. Burada, bir eğitmen olarak neler yapabileceğinizi ve bu tür durumları nasıl yöneteceğinizi göstereceğiz.",
-    heroWork:"5 kısa modülü tamamlayın. Bir sonraki modülün kilidini açmak için her modül kontrolünde en az %70 almanız gerekir. Toplam süre yaklaşık 25–30 dakikadır.",
+    heroWork:"5 kısa modülü tamamlayın. Bir sonraki modülün kilidini açmak için her modül değerlendirmesinde en az %70 almanız gerekir. Toplam süre yaklaşık 30–35 dakikadır.",
     startBtn:"🚀 Eğitimi Başlat",
     pathLabel:'Öğrenme Yolunuz',
     devTitle:'Geliştirici: inceleme için tüm modüllerin kilidini aç',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Modül 3', emoji:'🔧', color:'var(--coral)',
  title:'Teknik Sorunlar ve Sınıf Dengesi',
- desc:'Düzensizliğin neden çoğu zaman kılık değiştirmiş bir teknik sorun olduğu, bunun büyük kısmını neyin önlediği ve bir öğrencinin sorununu çözerken tüm grubun öğrenmeye devam etmesini nasıl sağlayacağınız.',
- obj:'Teknik sorunların çoğunu daha başlamadan önlemek, ortaya çıktıklarında net bir protokol izlemek ve bir öğrencinin sorununu çözerken grubun geri kalanını derse dahil tutmak.',
+ desc:'Düzensizliğin neden çoğu zaman gizlenmiş bir teknik sorun olduğu, bir öğrencinin sorununu çözerken tüm grubun öğrenmeye devam etmesini nasıl sağlayacağınız, işini hızlı bitiren öğrenciler için bir plan, kalabalık bir grupta her çocuğa nasıl ilgi göstereceğiniz ve bir öğrenci derse geç katıldığında ne yapacağınız.',
+ obj:'Teknik sorunların çoğunu başlamadan önlemek, ortaya çıktıklarında net bir protokol izlemek, siz diğerlerine yardım ederken işini hızlı bitirenleri meşgul etmek, kalabalık bir grupta her çocuğa ilgi göstermek ve derse geç gelen bir öğrencinin grubu durdurmadan yetişmesine yardımcı olmak.',
  sections:[
   {t:'⚖️ Bu konu neden burada', html:`
    <div class="card"><p>Teknik sorunlar çoğu zaman sınıfta düzensizliğe yol açar ve bunun sonucunda öğrenciler sıkılır.</p>
@@ -248,7 +248,7 @@ const CONTENT = {
    <div class="card"><h4>Her kursun gerçekte neye ihtiyacı var</h4><div class="tbl-wrap"><table>
    <tr><th>Kurs</th><th>Gereksinim</th><th>Seviye</th></tr>
    <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Çizim</td><td>Yalnızca Chrome, kurulacak bir şey yok — neredeyse her cihazda çalışır</td><td>Kolay</td></tr>
-   <tr><td>Dijital Yaratıcılık, Grafik Tasarım, İllüstrasyon</td><td>Chrome + bir tarayıcı aracı (Canva, Krita) — ekran boyutu/tablet gereksinimlerini kontrol edin</td><td>Kontrol edin</td></tr>
+   <tr><td>Dijital Yaratıcılık, Grafik Tasarım</td><td>Chrome + bir tarayıcı aracı (Canva, Krita) — ekran boyutu/tablet gereksinimlerini kontrol edin</td><td>Kontrol edin</td></tr>
    <tr><td>Roblox Studio</td><td>Yalnızca Windows veya Mac (tablet yok, Linux yok), 4 GB RAM, 1. dersten önce kurulmuş Roblox Studio</td><td>Kontrol edin</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac veya Linux, Java Edition önerilir, 4 GB RAM, kendi Minecraft hesabı</td><td>Kontrol edin</td></tr>
    <tr><td>3D Modelleme</td><td>En az 8 GB RAM, tekerlekli fare zorunlu, harici ekran kartı önerilir</td><td>Yüksek gereksinim</td></tr>
@@ -279,6 +279,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Gruba yapacak bir şey verin</strong> — sorunu çözmeye başladığınız anda; onları donuk bir ekrana bakar hâlde bırakmayın.`},
      {ic:'🫂', html:`<strong>Sesinizle sakin kalın.</strong> Çözümden önce sizin tepkiniz derstir. Sakin bir “bu bazen olur, bir yolunu bulalım” sınıfı dengede tutar.`}
    ])}
+  `},
+  {t:'⚡ Kimse beklemesin: işini hızlı bitirenler için bir plan', html:`
+   <div class="card"><p>Bir öğrenciye — teknik bir sorun ya da zor bir adım için — yardım etmek üzere durduğunuzda, başka biri işini bitirir ve yapacak bir şeyi kalmaz. Bekleyen öğrenci sıkılır, sıkılan öğrenci ise konuşmaya başlar, ayrılır ya da dersin zaman kaybı olduğuna karar verir. Aileler bunu fark eder: <em>«Ders zamanının çoğu, eğitmen diğerlerine yardım ederken beklemekle geçiyor.»</em> Çözüm, sonraki adımı kimsenin ihtiyacı <strong>olmadan önce</strong> hazır tutmaktır.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Görevi bitirdin mi?'},
+     {ic:'⭐', label:'1. Dersteki ek etkinlik'},
+     {ic:'🎨', label:'2. Kendine mal et: bir varyasyon ya da kişisel dokunuş'},
+     {ic:'🤝', label:'3. Bir arkadaşına yardım et — istendiğinde'},
+     {ic:'📚', label:'4. Ödeve erkenden başla'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Alıştırmanın başında merdiveni ekranda veya sohbette gösterin:</strong> <em>«Bitirdin mi? 1 → ek görev · 2 → kendi dokunuşunu ekle · 3 → ödeve başla.»</em> Öğrenciler sizi beklemeden ilerler.`},
+     {ic:'🎯', html:`<strong>Kılavuzda zaten var olanı kullanın.</strong> Birçok ders ek etkinlik içerir — bir gün önceden hazırlayın ki hemen kullanıma hazır olsun.`},
+     {ic:'🤝', html:`<strong>Kurallı akran yardımcıları.</strong> Hızlı bir öğrenci bir arkadaşına yardım edebilir — siz istersiniz, arkadaşı yerine yazmadan açıklar ve yardım eden de takdir görür.`},
+     {ic:'🖥️', html:`<strong>Yardımlar arasında kısa kontroller yapın.</strong> <em>«Ana, ekranını on saniyeliğine göster — harika, şimdi 2. görevi dene.»</em> Bu, hızlı öğrencilerin yalnızca meşgul değil, fark edilmiş hissetmesini sağlar.`}
+   ])}
+  `},
+  {t:'👀 Her çocuk, her ders — kalabalık bir grupta ilgi', html:`
+   <div class="card"><p>Kalabalık bir grupta dersi en çok konuşan öğrencilerle geçirmek kolaydır — sessiz bir çocuk ise bütün bir saat boyunca kendisine hiç hitap edilmeden geçirebilir. O çocuk ve velisi için bu, <em>«kimse onu fark etmiyor»</em> gibi hissettirir. İlgi daha fazla zaman gerektirmez; bir sistem gerektirir.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>İsimleri sık kullanın.</strong> Her derste her öğrenciye en az iki kez ismiyle hitap etmeyi hedefleyin — ısınmada ve alıştırma sırasında bir kez daha.`},
+     {ic:'🔄', html:`<strong>Sıraları dönüşümlü yapın.</strong> Ekran paylaşımını sırayla yaptırın, farklı öğrencilerden cevap alın ve adil olması için rastgele seçici kullanın — hep aynı hızlı eller olmasın.`},
+     {ic:'👍', html:`<strong>Grupla hızlı kontroller.</strong> <em>«2. adımı bitirince baş parmağını kaldır.»</em> Tek bakışta kimin takıldığını görürsünüz, kendisinin söylemesini beklemeden.`},
+     {ic:'💬', html:`<strong>Sessiz öğrencilerle özel kontroller.</strong> Kısa bir özel sohbet mesajı — <em>«Nasıl gidiyor? Nerede olduğunu göster»</em> — herkesin önünde asla sormayacak öğrencilere ulaşır.`},
+     {ic:'📝', html:`<strong>Kafanızda ya da kâğıtta hızlı bir liste tutun.</strong> Kapanıştan önce kontrol edin: bugün konuşmadığım biri var mı? Önce ona gidin.`},
+     {ic:'🙋', html:`<strong>Kalkan her ele cevap verin;</strong> yalnızca <em>«Seni gördüm, Leyla — sıradaki sensin.»</em> demek için bile olsa. Görmezden gelinen bir el, bir çocuğu kaybetmenin en hızlı yollarından biridir.`}
+   ])}
+  `},
+  {t:'⏰ Bir öğrenci derse geç katılıyor', html:`
+   <div class="card"><p>Öğrenciler birçok nedenle geç gelir: okul uzadı, bağlantı koptu, bağlantı adresi kayboldu. Biri her katıldığında baştan başlarsanız tüm grup zaman kaybeder. Geç gelene kimse yardım etmezse dersin geri kalanını kaybolmuş şekilde geçirir ve velisine bunu anlatır. Amaç, diğer herkesi durdurmadan onu birkaç dakika içinde çalışır hâle getirmektir.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Katıldığında', items:[
+       '<strong>Onu ismiyle kısaca karşılayın:</strong> <em>«Hoş geldin, Leyla! 3. adımdayız: karakteri zıplatmak.»</em>',
+       '<strong>Grubun önünde neden geç kaldığını sormayın</strong> ve onun için açıklamayı baştan başlatmayın.'
+     ]},
+     {ic:'💬', label:'İlk dakikalarda', items:[
+       '<strong>Sohbete tek satırlık bir özet yazın:</strong> ne yaptık, şimdi ne yapıyoruz ve nereye tıklanacak.',
+       '<strong>Önce gruba bir sonraki görevi verin,</strong> ardından geç gelenle özel olarak ilgilenin: <em>«Ekranını bir an paylaş, kaçırdığın adımı sana göstereyim.»</em>',
+       '<strong>Adım uzunsa onu bir arkadaşıyla eşleştirin</strong> ve birkaç dakika sonra yeniden kontrol edin.'
+     ]},
+     {ic:'📚', label:'Dersten sonra', items:[
+       '<strong>Önemli bir bölümü kaçırdıysa</strong> materyalleri (varsa kaydı da) paylaşın ve neyi tekrar etmesi gerektiğini söyleyin.',
+       '<strong>Tekrar olursa</strong> aynı gün veliye nazikçe yazarak nedenini öğrenin ve BO’ya bir yorum bırakın. Neden dersin saatiyse Takım Liderinize bildirin: saat değişikliği sizin vereceğiniz bir karar değildir.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Dersten önce hazırlayın.</strong> Ders planınızın her aşaması için tek satırlık kısa bir özet yazın. Biri geç geldiğinde yalnızca sohbete yapıştırmanız yeter.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>Teknik bir sorun yüzünden mi geç kaldı?</strong> Girmesine yardım edin, ardından yukarıdaki teknik protokolü izleyin: çözmek için 10 dakika, sonra bilgilendirin, belgeleyin ve yükseltin.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +342,10 @@ const CONTENT = {
    {type:'sort', prompt:'Bu ne tür bir sorun?', card:'Bir öğrenci açıklama sırasında ilgisiz konulardan bahsetmek için sürekli mikrofonunu açıyor.', zones:[
      {label:'⚖️ Disiplin sorunu', fb:'Doğru — bu, teknik bir belirti değil, yönlendirilmesi gereken bir sınıf yönetimi örüntüsüdür.'},
      {label:'🔧 Teknik sorun', fb:'Tam değil — bu bir cihaz veya bağlantı sorunu değil, bir disiplin örüntüsüdür.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Bir öğrencinin hatasını düzeltmesine yardım ediyorsunuz ve diğer üç öğrenci işini çoktan bitirdi. Hâlihazırda neyin hazır olması gerekir?', opts:['Ekranda veya sohbette bir «Bitirdin mi?» merdiveni: ek görev, kişisel bir dokunuş, ardından ödeve erken başlama','Hiçbir şey — birkaç dakika bekleyebilirler','Siz hatayı düzeltirken izlemelerini istersiniz'], correct:0, fb:'Sonraki adımlar kimsenin ihtiyacı olmadan önce hazırsa kimse beklemez — ve hızlı bir öğrenciyi sıkılmış bir öğrenciye dönüştüren şey beklemektir.'},
+   {type:'choice', prompt:'On kişilik bir grupta sessiz bir öğrenci bütün ders boyunca tek kelime etmedi. Kapanışa az kaldı. Ne yaparsınız?', opts:['Onu rahat bırakırsınız — hazır olunca konuşur','Kapanıştan önce ona ismiyle hitap edersiniz: özel bir kontrol ya da ekranını paylaşması için bir sıra','Katılsın diye herkesin önünde ona zor bir soru sorarsınız'], correct:1, fb:'Kapanıştan önce zihinsel listenize bakın: henüz konuşmadığınız biri varsa önce ona gidin. Özel bir kontrol ya da kolay bir sıra, öğrencinin baskı hissetmeden fark edilmiş hissetmesini sağlar.'},
+   {type:'sort', prompt:'Bir öğrenci derse geç katıldığında bu iyi bir hamle mi?', card:'Bir öğrenci 15 dakika geç katılıyor. Grubu durdurup bütün açıklamayı baştan tekrarlıyorsunuz.', zones:[{label:'💎 İyi hamle', fb:'Tam olarak değil — siz her şeyi tekrarlarken grubun geri kalanı bekliyor. Öğrenciyi karşılayın, sohbete tek satırlık bir özet yazın ve grup çalışmaya başladığında ona özel olarak yardım edin.'},{label:'🗑️ İyi bir hamle değil', fb:'Doğru! Kısa bir karşılama, sohbette tek satırlık bir özet ve kısa bir özel kontrol, herkesi durdurmadan geç gelenin çalışmaya başlamasını sağlar.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +371,11 @@ const CONTENT = {
      'Saygı konusunda kararlıyım: bir öğrenci müstehcen bir dil kullanır veya bir sınıf arkadaşına saldırırsa, grubu korumak için mikrofonunu bir süreliğine kapatıyorum ve dersten sonra konuşuyoruz',
      'Bir görevde bir şeyler ters gittiğinde hatayı olağan karşılıyor ve bir öğrenme fırsatı olarak ele alıyorum',
      'Bir durum yatıştırılamıyorsa — ders sırasında bile — veliden yardım istiyorum; sonrasında da durumu aileye bildiriyor ve BO’da bir yorum bırakıyorum',
-     'Düzeneğimi dersten 30 dakika önce test ediyor ve bir öğrencinin teknik sorununu çözerken grubun çalışmaya devam etmesini sağlıyorum'
+     'Düzeneğimi dersten 30 dakika önce test ediyor ve bir öğrencinin teknik sorununu çözerken grubun çalışmaya devam etmesini sağlıyorum',
+     'Ekranda veya sohbette bir «Bitirdin mi?» merdiveni gösteririm — ek etkinlik, kişisel bir dokunuş, bir arkadaşa yardım, ödeve erken başlama — böylece kimse beklemez.',
+     'Her derste her öğrenciye en az iki kez ismiyle hitap eder, sıraları dönüşümlü yaptırır ve kapanıştan önce henüz kiminle konuşmadığımı kontrol ederim.',
+     'Kalkan her ele cevap veririm ve sessiz öğrenciler için özel kontroller yaparım.',
+     'Bir öğrenci derse geç katıldığında onu kısaca karşılar, sohbete tek satırlık bir özet yazar ve grup çalışırken ona özel olarak yardım ederim — bu devam ederse veliye yazar ve BO’ya bir yorum bırakırım.'
    ])}
   `},
   {t:'', html:`

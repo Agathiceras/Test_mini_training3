@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-treinamento",
     heroTitle:"Conduzindo uma aula <span class=\"h-pill\">bem organizada</span>",
     heroIntro:"Você recebeu este treinamento porque tem alunos que pediram reembolso por causa de desorganização ou de problemas de disciplina na aula. Aqui, vamos mostrar o que você pode fazer como tutor e como lidar com essas situações.",
-    heroWork:"Complete 4 módulos curtos. Acerte pelo menos 70% em cada verificação para liberar o próximo módulo. Levará cerca de 25 a 35 minutos.",
+    heroWork:"Conclua 5 módulos curtos. Cada avaliação de módulo exige pelo menos 70% de acerto para desbloquear o próximo. Duração total aproximada: 30–35 minutos.",
     startBtn:"🚀 Começar o treinamento",
     pathLabel:'Sua trilha de aprendizagem',
     devTitle:'Dev: liberar todos os módulos para revisão',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Módulo 3', emoji:'🔧', color:'var(--coral)',
  title:'Problemas técnicos e equilíbrio da aula',
- desc:'Por que a desordem muitas vezes é um problema técnico disfarçado, o que evita a maior parte deles e como manter o grupo inteiro aprendendo enquanto você resolve o problema de um aluno.',
- obj:'Evitar a maior parte dos problemas técnicos antes de começarem, seguir um protocolo claro quando eles acontecem e manter o restante do grupo engajado enquanto você resolve o problema de um aluno.',
+ desc:'Por que a desorganização costuma ser um problema técnico disfarçado, como manter todo o grupo aprendendo enquanto você resolve o problema de um aluno, um plano de ação para quem termina rápido, como dar atenção a cada criança em turmas grandes e o que fazer quando um aluno entra atrasado na aula.',
+ obj:'Prevenir a maioria dos problemas técnicos antes que aconteçam, seguir um protocolo claro quando eles surgirem, manter os alunos mais rápidos engajados enquanto você auxilia os outros, garantir atenção a cada criança em turmas grandes e ajudar um aluno que chega atrasado a acompanhar o conteúdo sem interromper o restante do grupo.',
  sections:[
   {t:'⚖️ Por que isto está aqui', html:`
    <div class="card"><p>Os problemas técnicos muitas vezes levam à desorganização na sala de aula e, como consequência, os alunos ficam entediados.</p>
@@ -237,23 +237,20 @@ const CONTENT = {
    <div class="card"><p>Muitas vezes, os problemas técnicos que os alunos enfrentam na aula estão relacionados ao uso de um navegador diferente do Google Chrome ou de dispositivos inadequados para o curso, como tentar assistir à aula em um tablet, celular ou iPad. Por isso é importante que você conheça os requisitos mínimos para poder ajudá-los.</p></div>
    ${doavoid(
     ["Google Chrome atualizado — o único navegador totalmente compatível",
-     "Pelo menos 4 GB de RAM (8 GB para Blender ou Unity)",
+     "Pelo menos 4 GB de RAM",
      "Uma conexão estável, de no mínimo 10 Mbps — sempre que possível, conexão por cabo é melhor que Wi-Fi",
-     "Pelo menos 5 GB de espaço livre — Unity e Blender precisam de bem mais"],
+     "Pelo menos 5 GB de espaço livre"],
     ["Safari — bugs conhecidos com a plataforma da Kodland desde a última atualização: botões que não respondem, telas que não carregam, erros ao entrar",
-     "Tablets / iPads para cursos como Roblox Studio ou Unity — eles exigem um computador de verdade",
+     "Tablets / iPads para cursos como Roblox Studio — eles exigem um computador de verdade",
      "Presumir que um problema no Mac é falta de interesse antes de verificar se é simplesmente o Safari"]
    )}
    ${co('co-idea','🍎',`<p>Fique atento a Mac + Safari em especial. Se um aluno com Mac não consegue fazer os botões responderem ou a tela não carrega, a solução quase sempre é: abrir a aula no Google Chrome. Indique às famílias o endereço google.com/chrome.</p>`)}
    <div class="card"><h4>O que cada curso realmente exige</h4><div class="tbl-wrap"><table>
    <tr><th>Curso</th><th>Requisito</th><th>Nível</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Desenho</td><td>Somente Chrome, sem nada para instalar — funciona em quase qualquer dispositivo</td><td>Fácil</td></tr>
-   <tr><td>Criatividade Digital, Design Gráfico, Ilustração</td><td>Chrome + uma ferramenta de navegador (Canva, Krita) — verifique os requisitos de tamanho de tela/tablet</td><td>Verificar</td></tr>
+   <tr><td>Funtech, Scratch, Python 1 / Pro</td><td>Somente Chrome, sem nada para instalar — funciona em quase qualquer dispositivo</td><td>Fácil</td></tr>
+   <tr><td>Criatividade Digital, Design Gráfico</td><td>Chrome + uma ferramenta de navegador (Canva, Krita) — verifique os requisitos de tamanho de tela/tablet</td><td>Verificar</td></tr>
    <tr><td>Roblox Studio</td><td>Somente Windows ou Mac (sem tablet, sem Linux), 4 GB de RAM, Roblox Studio instalado antes da aula 1</td><td>Verificar</td></tr>
-   <tr><td>Minecraft</td><td>Windows, Mac ou Linux, Java Edition recomendada, 4 GB de RAM, conta própria do Minecraft</td><td>Verificar</td></tr>
-   <tr><td>Modelagem 3D</td><td>Mínimo de 8 GB de RAM, mouse com roda de rolagem obrigatório, placa de vídeo dedicada recomendada</td><td>Exigente</td></tr>
-   <tr><td>Unity</td><td>8 GB de RAM obrigatórios, 10 GB de espaço livre, somente Windows ou Mac — sem Chromebook</td><td>Exigente</td></tr>
-   </table></div></div>
+   <tr><td>Minecraft</td><td>Windows, Mac ou Linux, Java Edition recomendada, 4 GB de RAM, conta própria do Minecraft</td><td>Verificar</td></tr>   </table></div></div>
   `},
   {t:'🧑‍💻 Problemas técnicos dos tutores', html:`
    <div class="card"><p>O mesmo cuidado vale para a sua própria configuração — um problema técnico do tutor pode paralisar uma aula tanto quanto o de um aluno.</p></div>
@@ -262,7 +259,7 @@ const CONTENT = {
     {ic:'📷', html:`<strong>Procure alternativas.</strong> Se desligar a câmera melhora a sua conexão, faça isso.`},
     {ic:'🎙️', html:`<strong>Tenha um microfone reserva.</strong> Se o seu headset não estiver funcionando, tente outra opção, como o áudio embutido do computador, e sempre ative a redução de ruído de fundo no Classroom.`},
     {ic:'📶', html:`<strong>Verifique os seus drivers e se há uma VPN ativa</strong> — as VPNs costumam deixar a conexão mais lenta.`},
-    {ic:'🧊', html:`<strong>Trabalhando com uma ferramenta pesada como o Blender?</strong> O curso inclui, nas primeiras aulas, um guia de como configurá-lo para ter melhor desempenho.`},
+    {ic:'🧊', html:`<strong>Trabalhando com uma ferramenta pesada como o Roblox Studio?</strong> Peça para fechar os outros programas e, se ainda estiver lento, reduza a qualidade gráfica nas configurações do programa.`},
     {ic:'💻', html:`<strong>Libere RAM antes da aula.</strong> O Google Chrome oferece a melhor experiência com o Classroom, mas também costuma usar muita RAM — feche as abas e os programas de que você não precisa agora.`},
     {ic:'👂', html:`<strong>Confirme ao vivo.</strong> Antes de a aula começar, confirme com os alunos que eles conseguem ver e ouvir você direito — assim você percebe os problemas técnicos cedo.`}
    ])}
@@ -279,6 +276,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Dê ao grupo algo para fazer</strong> no instante em que você começar a investigar o problema — não deixe todos olhando para uma tela parada.`},
      {ic:'🫂', html:`<strong>Mantenha a calma, em voz alta.</strong> A sua reação é a lição, antes mesmo da solução. Um “isso acontece às vezes, vamos dar um jeito” tranquilo mantém a sala estável.`}
    ])}
+  `},
+  {t:'⚡ Ninguém espera: um plano para quem termina rápido', html:`
+   <div class="card"><p>Sempre que você pausa para ajudar um aluno — seja com um problema técnico ou uma etapa mais complexa —, outro aluno termina a tarefa e fica ocioso. Um aluno que espera fica entediado, e um aluno entediado começa a conversar, se dispersa ou conclui que a aula é uma perda de tempo. As famílias percebem isso: <em>“a turma passa a maior parte do tempo esperando enquanto o tutor ajuda os outros”</em>. A solução é ter o próximo passo estruturado <strong>antes mesmo</strong> que alguém precise dele.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Terminou a atividade?'},
+     {ic:'⭐', label:'1. A atividade extra da aula'},
+     {ic:'🎨', label:'2. Deixe com a sua cara: crie uma variação ou adicione um toque pessoal'},
+     {ic:'🤝', label:'3. Ajude um colega — quando o tutor pedir'},
+     {ic:'📚', label:'4. Adiante a lição de casa'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Deixe essa “escada de tarefas” visível na tela ou no chat</strong> logo no início da prática: <em>“Terminou? 1 → faça o desafio extra · 2 → acrescente o seu toque pessoal · 3 → comece a lição de casa”.</em> Assim, os alunos avançam sem depender de você.`},
+     {ic:'🎯', html:`<strong>Aproveite o que o guia já oferece.</strong> Muitas aulas incluem atividades extras prontas — revise o material no dia anterior para tê-las à mão.`},
+     {ic:'🤝', html:`<strong>Colegas ajudantes, com regras.</strong> Um aluno que termina rápido pode auxiliar um colega: você faz o convite, ele orienta (sem digitar ou fazer a tarefa pelo outro), e o ajudante recebe o devido reconhecimento pelo esforço.`},
+     {ic:'🖥️', html:`<strong>Faça verificações rápidas entre um atendimento e outro.</strong> <em>“Ana, mostre sua tela por dez segundos — ótimo, agora tente o desafio 2.”</em> Dessa forma, quem termina rápido sente que seu avanço foi notado, em vez de apenas receber mais trabalho para ficar ocupado.`}
+   ])}
+  `},
+  {t:'👀 Cada criança, cada aula — atenção em turmas grandes', html:`
+   <div class="card"><p>Em turmas maiores, é fácil passar a aula inteira interagindo apenas com os alunos mais falantes, enquanto uma criança mais quieta pode chegar ao fim de uma hora sem ter sido chamada. Para essa criança, e para a família dela, a impressão é de que <em>“ninguém a nota”</em>. Dar atenção não exige mais tempo; exige método.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Use os nomes com frequência.</strong> Tente chamar cada aluno pelo nome pelo menos duas vezes por aula: uma no aquecimento e outra durante a prática.`},
+     {ic:'🔄', html:`<strong>Alterne os turnos.</strong> Faça um rodízio no compartilhamento de tela, peça respostas a alunos diferentes e use um sorteador aleatório para garantir justiça — evitando que apenas os alunos mais rápidos participem.`},
+     {ic:'👍', html:`<strong>Verificações rápidas com o grupo.</strong> <em>“Mande um joinha na tela quando terminar o passo 2.”</em> Em um relance, você identifica quem está travado, sem precisar esperar que o aluno levante a mão para pedir ajuda.`},
+     {ic:'💬', html:`<strong>Abordagens individuais com os alunos mais quietos.</strong> Uma mensagem curta no chat privado — <em>“Como está indo? Quer me mostrar onde você está?”</em> — alcança alunos que talvez nunca perguntassem na frente de todos.`},
+     {ic:'📝', html:`<strong>Mantenha um mapeamento rápido (mental ou no papel).</strong> Antes do encerramento, faça um balanço: há alguém com quem eu ainda não interagi hoje? Comece direcionando a palavra a essa pessoa.`},
+     {ic:'🙋', html:`<strong>Responda a cada mão levantada,</strong> nem que seja para sinalizar: <em>“Já vi você, Leo, você é o próximo”.</em> Ignorar uma mão levantada é uma das formas mais rápidas de fazer uma criança se desconectar da aula.`}
+   ])}
+  `},
+  {t:'⏰ Um aluno entra atrasado na aula', html:`
+   <div class="card"><p>Alunos se atrasam por diversos motivos: a escola regular demorou a liberar, a conexão caiu, o link de acesso se perdeu. Se você recomeçar a explicação toda vez que alguém entra, o grupo inteiro perde o ritmo. Por outro lado, se ninguém amparar quem chegou atrasado, ele passará o resto da aula perdido — e é isso que ele relatará aos responsáveis. O objetivo é integrar o aluno à atividade em poucos minutos, sem paralisar o andamento da turma.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Quando ele entra', items:[
+       '<strong>Cumprimente-o de forma breve e nominal:</strong> <em>“Bem-vindo, Leo! Estamos no passo 3: fazer o personagem pular.”</em>',
+       '<strong>Não o questione sobre o motivo do atraso na frente do grupo</strong> e não recomece toda a explicação do zero.'
+     ]},
+     {ic:'💬', label:'Nos primeiros minutos', items:[
+       '<strong>Publique um resumo de uma linha no chat:</strong> o que já foi feito, o que estamos fazendo agora e onde ele deve clicar.',
+       '<strong>Passe primeiro a próxima instrução para a turma</strong> e, na sequência, faça um alinhamento individual com quem chegou atrasado: <em>“Compartilhe sua tela rapidinho, vou te mostrar o passo que você perdeu.”</em>',
+       '<strong>Caso a etapa seja longa, coloque-o para trabalhar em dupla com um colega de apoio</strong> e volte a checar o progresso dele alguns minutos depois.'
+     ]},
+     {ic:'📚', label:'Depois da aula', items:[
+       '<strong>Se ele perdeu uma parte crucial do conteúdo,</strong> compartilhe os materiais (e a gravação da aula, se disponível) e oriente sobre o que ele precisa revisar.',
+       '<strong>Se os atrasos forem recorrentes,</strong> envie uma mensagem gentil aos responsáveis no mesmo dia para entender o contexto e registre um comentário no BO. Se o motivo for conflito de horários, acione seu Team Leader: a alteração de horário de turmas não é uma decisão que cabe a você.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Prepare-se antes da aula.</strong> Digite uma linha curta de resumo para cada etapa principal do seu plano de aula. Se alguém chegar atrasado, bastará copiar e colar no chat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>O atraso ocorreu por problema técnico?</strong> Ajude o aluno a estabilizar o acesso e, em seguida, siga o protocolo técnico padrão: dedique no máximo 10 minutos para a resolução e, caso persista, comunique, documente e escale o caso.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +339,10 @@ const CONTENT = {
    {type:'sort', prompt:'Que tipo de problema é este?', card:'Um aluno fica ativando o microfone para falar de assuntos sem relação durante a explicação.', zones:[
      {label:'⚖️ Problema de disciplina', fb:'Correto — este é um padrão de gestão de sala de aula a ser redirecionado, não um sintoma técnico.'},
      {label:'🔧 Problema técnico', fb:'Não foi bem isso — este é um padrão de disciplina, não um problema de dispositivo ou de conexão.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Você está ajudando um aluno a corrigir um erro e outros três já terminaram a tarefa. O que já deveria estar estruturado para evitar a dispersão?', opts:['Uma “escada de tarefas” visível na tela ou no chat: desafio extra, um toque pessoal no projeto e, por fim, adiantar a lição de casa.','Nada — eles podem esperar alguns minutos.','Pedir que eles assistam em silêncio enquanto você corrige o erro do colega.'], correct:0, fb:'Quando os próximos passos já estão definidos antes mesmo de serem necessários, ninguém fica ocioso — e é a ociosidade que transforma um aluno ágil em um aluno entediado.'},
+   {type:'choice', prompt:'Em uma turma de dez alunos, um estudante mais quieto não disse uma única palavra durante a aula toda. Faltam poucos minutos para o encerramento. O que você faz?', opts:['Deixa ele no seu próprio ritmo — ele vai participar quando se sentir pronto.','Chama o aluno pelo nome antes do fim da aula, propõe uma interação rápida no privado ou convida-o a compartilhar a tela.','Faz uma pergunta difícil para ele na frente de todos, forçando-o a participar.'], correct:1, fb:'Consulte o seu mapeamento mental antes de finalizar a aula: quem ainda não recebeu atenção tem prioridade. Uma mensagem privada ou uma participação mais simples faz o aluno se sentir notado, sem gerar pressão.'},
+   {type:'sort', prompt:'Essa é uma boa abordagem quando um aluno chega atrasado na aula?', card:'Um aluno entra com 15 minutos de atraso. Você interrompe a prática da turma e repete toda a explicação desde o início para ele.', zones:[{label:'💎 Boa atitude', fb:'Incorreto — o restante do grupo ficará ocioso esperando você repetir o conteúdo. Aja de forma objetiva: cumprimente o aluno, envie um resumo de uma linha no chat e ofereça suporte direcionado enquanto o grupo continua trabalhando.'},{label:'🗑️ Atitude inadequada', fb:'Correto! Uma recepção amigável e rápida, um resumo no chat e um breve suporte individualizado ajudam o retardatário a entrar na dinâmica sem prejudicar o ritmo da turma.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +368,11 @@ const CONTENT = {
      'Sou firme quanto ao respeito: se um aluno usa linguagem obscena ou ataca um colega, eu o silencio por um momento para proteger o grupo, e conversamos depois da aula',
      'Quando algo dá errado em uma tarefa, normalizo o erro e o trato como uma oportunidade de aprender',
      'Se uma situação não puder ser resolvida, peço ajuda ao responsável — mesmo durante a aula — e depois informo a família e deixo um comentário no BO',
-     'Testo a minha configuração 30 minutos antes da aula e mantenho o grupo trabalhando enquanto resolvo o problema técnico de um aluno'
+     'Testo a minha configuração 30 minutos antes da aula e mantenho o grupo trabalhando enquanto resolvo o problema técnico de um aluno',
+     'Deixo uma “escada de tarefas” (desafio extra, toque pessoal, suporte a um colega, lição de casa) visível na tela ou no chat, para que nenhum aluno fique ocioso após concluir uma etapa.',
+     'Chamo cada aluno pelo nome pelo menos duas vezes por aula, faço rodízio nas participações e confiro, antes do encerramento, com quem ainda não interagi.',
+     'Respondo a todas as mãos levantadas e utilizo mensagens privadas para engajar alunos mais quietos.',
+     'Quando um aluno chega atrasado, cumprimento-o brevemente, envio um resumo da etapa no chat e dou suporte individual enquanto a turma trabalha — e, caso os atrasos se tornem frequentes, comunico os responsáveis e registro o contexto no BO.'
    ])}
   `},
   {t:'', html:`

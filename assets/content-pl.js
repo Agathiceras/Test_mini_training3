@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Miniszkolenie",
     heroTitle:"Jak prowadzić <span class=\"h-pill\">dobrze zorganizowaną</span> lekcję",
     heroIntro:"Otrzymujesz to szkolenie, ponieważ masz uczniów, którzy poprosili o zwrot pieniędzy z powodu złej organizacji lub problemów z dyscypliną na zajęciach. Pokażemy ci, co możesz zrobić jako nauczyciel i jak radzić sobie w takich sytuacjach.",
-    heroWork:"Przejdź przez 5 krótkich modułów. Aby odblokować kolejny, w sprawdzianie każdego modułu potrzebujesz co najmniej 70%. Całość zajmie około 25–30 minut.",
+    heroWork:"Ukończ 5 krótkich modułów. Aby odblokować kolejny moduł, musisz uzyskać co najmniej 70% w teście danego modułu. Łączny czas: około 30–35 minut.",
     startBtn:"🚀 Rozpocznij szkolenie",
     pathLabel:'Twoja ścieżka nauki',
     devTitle:'Dev: odblokuj wszystkie moduły do przeglądu',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Moduł 3', emoji:'🔧', color:'var(--coral)',
  title:'Problemy techniczne i równowaga na zajęciach',
- desc:'Dlaczego nieporządek to często zakamuflowany problem techniczny, co zapobiega większości takich problemów i jak sprawić, by cała grupa się uczyła, gdy rozwiązujesz problem jednego ucznia.',
- obj:'Nauka zapobiegania większości problemów technicznych, zanim się pojawią, postępowania według jasnej procedury, gdy wystąpią, i utrzymywania zaangażowania reszty grupy, podczas rozwiązywania problemu jednego ucznia.',
+ desc:'Dlaczego bałagan często okazuje się problemem technicznym w przebraniu, jak sprawić, by cała grupa dalej się uczyła, gdy rozwiązujesz problem jednego ucznia, plan dla szybko kończących uczniów, jak poświęcić uwagę każdemu dziecku w dużej grupie i co robić, gdy uczeń dołącza do lekcji spóźniony.',
+ obj:'Zapobieganie większości problemów technicznych, zanim się pojawią, stosowanie jasnego protokołu, gdy do nich dojdzie, zajmowanie szybko kończących uczniów, gdy pomagasz innym, poświęcanie uwagi każdemu dziecku w dużej grupie oraz pomaganie uczniowi, który się spóźnił, w nadrobieniu materiału bez zatrzymywania grupy.',
  sections:[
   {t:'⚖️ Dlaczego to tyczy się tematu tego szkolenia', html:`
    <div class="card"><p>Problemy techniczne często prowadzą do dezorganizacji na zajęciach, a w efekcie uczniowie zaczynają się nudzić.</p>
@@ -247,8 +247,8 @@ const CONTENT = {
    ${co('co-idea','🍎',`<p>Zwracaj szczególną uwagę na połączenie Mac + Safari. Jeśli u ucznia z Makiem przyciski nie reagują albo ekran się nie wczytuje, rozwiązanie prawie zawsze brzmi: otwórz zajęcia w Google Chrome. Odsyłaj rodzinę na stronę google.com/chrome.</p>`)}
    <div class="card"><h4>Czego naprawdę wymaga każdy kurs</h4><div class="tbl-wrap"><table>
    <tr><th>Kurs</th><th>Wymagania</th><th>Poziom</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Drawing</td><td>Tylko Chrome, nic nie trzeba instalować — działa na prawie każdym urządzeniu</td><td>Łatwy</td></tr>
-   <tr><td>Digital Creativity, Graphic Design, Illustration</td><td>Chrome + narzędzie w przeglądarce (Canva, Krita) — sprawdź wymagania dotyczące rozmiaru ekranu i tabletu</td><td>Wymaga weryfikacji</td></tr>
+   <tr><td>Funtech, Python 1 / Pro</td><td>Tylko Chrome, nic nie trzeba instalować — działa na prawie każdym urządzeniu</td><td>Łatwy</td></tr>
+   <tr><td>Digital Creativity</td><td>Chrome + narzędzie w przeglądarce (Canva, Krita) — sprawdź wymagania dotyczące rozmiaru ekranu i tabletu</td><td>Wymaga weryfikacji</td></tr>
    <tr><td>Roblox Studio</td><td>Tylko Windows lub Mac (bez tabletu, bez Linuksa), 4 GB RAM, Roblox Studio zainstalowane przed lekcją 1</td><td>Wymaga weryfikacji</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac lub Linux, zalecana Java Edition, 4 GB RAM, własne konto Minecraft</td><td>Wymaga weryfikacji</td></tr>
    <tr><td>3D Modeling</td><td>Minimum 8 GB RAM, wymagana mysz z kółkiem, zalecana dedykowana karta graficzna</td><td>Wymagający</td></tr>
@@ -279,6 +279,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Daj grupie zadanie</strong> w chwili, gdy zaczynasz rozwiązywać problem — nie zostawiaj uczniów wpatrzonych w nieruchomy ekran.`},
      {ic:'🫂', html:`<strong>Zachowaj spokój — także w głosie.</strong> Twoja reakcja jest lekcją, zanim jeszcze nastąpi naprawa. Spokojne „czasem tak się zdarza, obejdziemy to” utrzymuje spokój w klasie.`}
    ])}
+  `},
+  {t:'⚡ Nikt nie czeka: plan dla szybko kończących uczniów', html:`
+   <div class="card"><p>Ilekroć zatrzymujesz się, by pomóc jednemu uczniowi — z problemem technicznym lub trudnym krokiem — ktoś inny kończy i nie ma nic do roboty. Uczeń, który czeka, nudzi się, a znudzony uczeń zaczyna rozmawiać, wychodzi albo uznaje, że lekcja to strata czasu. Rodziny to zauważają: <em>«klasa większość czasu czeka, aż tutor pomoże innym»</em>. Rozwiązaniem jest przygotowanie kolejnego kroku, <strong>zanim</strong> ktokolwiek go potrzebuje.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Zadanie skończone?'},
+     {ic:'⭐', label:'1. Dodatkowa aktywność z lekcji'},
+     {ic:'🎨', label:'2. Nadaj mu własny charakter: wariant lub osobisty akcent'},
+     {ic:'🤝', label:'3. Pomóż koledze lub koleżance — gdy Cię o to poproszę'},
+     {ic:'📚', label:'4. Zacznij pracę domową z wyprzedzeniem'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Wyświetl drabinkę na ekranie lub na czacie</strong> na początku ćwiczeń: <em>«Skończone? 1 → dodatkowe wyzwanie · 2 → dodaj własny akcent · 3 → zacznij pracę domową»</em>. Uczniowie przechodzą dalej, nie czekając na Ciebie.`},
+     {ic:'🎯', html:`<strong>Korzystaj z tego, co już jest w podręczniku.</strong> Wiele lekcji zawiera dodatkowe aktywności — przygotuj je dzień wcześniej, aby były gotowe do użycia.`},
+     {ic:'🤝', html:`<strong>Pomocnicy z grona uczniów, z zasadami.</strong> Szybki uczeń może pomóc koledze — Ty o to prosisz, on wyjaśnia, nie pisząc za kolegę, a pomagający również zostaje doceniony.`},
+     {ic:'🖥️', html:`<strong>Zaglądaj krótko do uczniów między kolejnymi pomocami.</strong> <em>«Ana, pokaż mi swój ekran na dziesięć sekund — świetnie, a teraz spróbuj wyzwania 2».</em> Dzięki temu szybcy uczniowie czują się zauważeni, a nie tylko zajęci.`}
+   ])}
+  `},
+  {t:'👀 Każde dziecko, każda lekcja — uwaga w dużej grupie', html:`
+   <div class="card"><p>W dużej grupie łatwo spędzić lekcję z uczniami, którzy mówią najwięcej — a cichemu dziecku może minąć cała godzina bez ani jednego zwrotu w jego stronę. Dla tego dziecka i jego rodzica oznacza to, że <em>«nikt go nie zauważa»</em>. Uwaga nie wymaga więcej czasu; wymaga systemu.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Często używaj imion.</strong> Staraj się zwrócić do każdego ucznia po imieniu co najmniej dwa razy na każdej lekcji — na rozgrzewce i ponownie podczas ćwiczeń.`},
+     {ic:'🔄', html:`<strong>Rotuj tury.</strong> Udostępniajcie ekran po kolei, zbieraj odpowiedzi od różnych uczniów i korzystaj z losowania, aby było sprawiedliwie — a nie zawsze te same szybkie ręce.`},
+     {ic:'👍', html:`<strong>Szybkie sprawdzenia z całą grupą.</strong> <em>«Kciuk w górę, gdy skończysz krok 2».</em> Jednym spojrzeniem widzisz, kto utknął, nie czekając, aż sam o tym powie.`},
+     {ic:'💬', html:`<strong>Prywatne sprawdzenia z cichymi uczniami.</strong> Krótka prywatna wiadomość na czacie — <em>«Jak Ci idzie? Pokaż mi, na którym jesteś etapie»</em> — dociera do uczniów, którzy nigdy nie zapytaliby przy wszystkich.`},
+     {ic:'📝', html:`<strong>Prowadź szybką listę, w głowie lub na papierze.</strong> Przed podsumowaniem sprawdź: czy jest ktoś, z kim dziś nie rozmawiałeś(-aś)? Zacznij od tej osoby.`},
+     {ic:'🙋', html:`<strong>Reaguj na każdą podniesioną rękę,</strong> nawet jeśli tylko po to, by powiedzieć: <em>«Widzę Cię, Leo — jesteś następny».</em> Zignorowana ręka to jeden z najszybszych sposobów na utratę dziecka.`}
+   ])}
+  `},
+  {t:'⏰ Uczeń dołącza do lekcji spóźniony', html:`
+   <div class="card"><p>Uczniowie spóźniają się z wielu powodów: szkoła się przedłużyła, połączenie zawiodło, link się zgubił. Jeśli za każdym razem zaczynasz od początku, gdy ktoś dołącza, cała grupa traci czas. Jeśli nikt nie pomaga spóźnionemu, spędza resztę lekcji zagubiony, a właśnie to mówi rodzicom. Celem jest, by w kilka minut zaczął pracować, bez zatrzymywania pozostałych.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Gdy dołącza', items:[
+       '<strong>Przywitaj go krótko, po imieniu:</strong> <em>«Witaj, Leo! Jesteśmy przy kroku 3: sprawianiu, by postać skakała».</em>',
+       '<strong>Nie pytaj przy grupie, dlaczego się spóźnił,</strong> i nie zaczynaj dla niego wyjaśnień od początku.'
+     ]},
+     {ic:'💬', label:'W pierwszych minutach', items:[
+       '<strong>Wstaw na czacie jednozdaniowe podsumowanie:</strong> co zrobiliśmy, co robimy teraz i gdzie kliknąć.',
+       '<strong>Najpierw zadaj grupie kolejne zadanie,</strong> a potem sprawdź prywatnie spóźnionego ucznia: <em>«Udostępnij na chwilę ekran, pokażę Ci krok, który Cię ominął».</em>',
+       '<strong>Połącz go z kolegą do pomocy,</strong> jeśli krok jest długi, i sprawdź go ponownie po kilku minutach.'
+     ]},
+     {ic:'📚', label:'Po lekcji', items:[
+       '<strong>Jeśli ominął ważną część,</strong> udostępnij materiały (i nagranie, jeśli jest) i powiedz, co powtórzyć.',
+       '<strong>Jeśli zdarzy się to ponownie,</strong> napisz do rodzica tego samego dnia, uprzejmie, aby dowiedzieć się dlaczego, i zostaw komentarz w BO. Jeśli powodem jest harmonogram, powiadom swojego Team Leadera: zmiana harmonogramu nie należy do Ciebie.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Przygotuj to przed lekcją.</strong> Zapisz jedno krótkie zdanie podsumowania dla każdej fazy planu lekcji. Gdy ktoś się spóźni, wystarczy je wkleić na czat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>Spóźnienie z powodu problemu technicznego?</strong> Pomóż wejść na lekcję, a potem postępuj zgodnie z protokołem technicznym opisanym wyżej: 10 minut na naprawę, następnie komunikacja, dokumentacja i eskalacja.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +342,10 @@ const CONTENT = {
    {type:'sort', prompt:'Jaki to rodzaj problemu?', card:'Uczeń ciągle włącza mikrofon, żeby podczas wyjaśnień mówić o niezwiązanych rzeczach.', zones:[
      {label:'⚖️ Problem z dyscypliną', fb:'Zgadza się — to wzorzec do przekierowania w ramach zarządzania klasą, a nie objaw techniczny.'},
      {label:'🔧 Problem techniczny', fb:'Nie do końca — to wzorzec związany z dyscypliną, a nie problem z urządzeniem lub połączeniem.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Pomagasz jednemu uczniowi naprawić błąd, a trzech innych już skończyło. Co powinno być już gotowe?', opts:['Drabinka «Skończone?» na ekranie lub na czacie: dodatkowe wyzwanie, osobisty akcent, a potem praca domowa z wyprzedzeniem','Nic — mogą poczekać kilka minut','Prosisz, by obserwowali, jak naprawiasz błąd'], correct:0, fb:'Gdy kolejne kroki są gotowe, zanim ktokolwiek ich potrzebuje, nikt nie czeka — a właśnie czekanie zmienia szybkiego ucznia w znudzonego.'},
+   {type:'choice', prompt:'W grupie dziesięciu osób cichy uczeń nie powiedział ani słowa przez całą lekcję. Zbliża się podsumowanie. Co robisz?', opts:['Zostawiasz go w spokoju — przemówi, gdy będzie gotowy','Zwracasz się do niego po imieniu przed podsumowaniem: prywatne sprawdzenie lub tura udostępniania ekranu','Zadajesz mu trudne pytanie przy wszystkich, aby się włączył'], correct:1, fb:'Sprawdź swoją listę przed podsumowaniem: ktoś, z kim jeszcze nie rozmawiałeś(-aś), idzie pierwszy. Prywatne sprawdzenie lub łatwa tura sprawia, że uczeń czuje się zauważony, bez presji.'},
+   {type:'sort', prompt:'Czy to dobre posunięcie, gdy uczeń dołącza spóźniony?', card:'Uczeń dołącza 15 minut później. Zatrzymujesz grupę i powtarzasz całe wyjaśnienie od początku.', zones:[{label:'💎 Dobre posunięcie', fb:'Niezupełnie — reszta grupy czeka, gdy powtarzasz wszystko. Przywitaj ucznia, wstaw na czacie jednozdaniowe podsumowanie i pomóż mu prywatnie, gdy grupa już pracuje.'},{label:'🗑️ Złe posunięcie', fb:'Zgadza się! Krótkie powitanie, jednozdaniowe podsumowanie na czacie i krótkie prywatne sprawdzenie pozwalają spóźnionemu zacząć pracę bez zatrzymywania pozostałych.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +371,11 @@ const CONTENT = {
      'Stanowczo pilnuję szacunku: jeśli uczeń używa wulgarnego języka lub atakuje kolegę, na chwilę go wyciszam, żeby chronić grupę, a po zajęciach rozmawiamy',
      'Gdy coś w zadaniu pójdzie nie tak, normalizuję błąd i traktuję go jako okazję do nauki',
      'Jeśli sytuacji nie da się uspokoić, proszę rodzica o pomoc — nawet w trakcie lekcji — a potem informuję rodzinę i zostawiam komentarz w BO',
-     'Testuję swój sprzęt 30 minut przed zajęciami i dbam o to, żeby grupa pracowała, gdy rozwiązuję problem techniczny jednego ucznia'
+     'Testuję swój sprzęt 30 minut przed zajęciami i dbam o to, żeby grupa pracowała, gdy rozwiązuję problem techniczny jednego ucznia',
+     'Wyświetlam na ekranie lub na czacie drabinkę «Skończone?» — dodatkowa aktywność, osobisty akcent, pomoc koledze, praca domowa z wyprzedzeniem — aby nikt nie czekał.',
+     'Zwracam się do każdego ucznia po imieniu co najmniej dwa razy na lekcji, rotuję tury i przed podsumowaniem sprawdzam, z kim jeszcze nie rozmawiałem(-am).',
+     'Odpowiadam na każdą podniesioną rękę i stosuję prywatne sprawdzenia z cichymi uczniami.',
+     'Gdy uczeń dołącza do lekcji spóźniony, krótko go witam, wstawiam na czacie jednozdaniowe podsumowanie i pomagam mu prywatnie, gdy grupa już pracuje — a jeśli zdarza się to nadal, piszę do rodzica i zostawiam komentarz w BO.'
    ])}
   `},
   {t:'', html:`

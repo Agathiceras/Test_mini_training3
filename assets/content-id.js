@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"Menjalankan Pelajaran yang <span class=\"h-pill\">Terorganisir</span>",
     heroIntro:"Kamu menerima pelatihan ini karena ada siswamu yang mengajukan refund karena kelas yang tidak terorganisir atau masalah kedisiplinan di kelas. Di sini kami akan menunjukkan apa yang bisa kamu lakukan sebagai tutor dan cara menangani situasi seperti ini.",
-    heroWork:"Selesaikan 5 modul singkat. Setiap cek modul butuh nilai 70%+ untuk membuka modul berikutnya. Total sekitar 25–30 menit.",
+    heroWork:"Selesaikan 5 modul singkat. Anda harus mendapatkan nilai minimal 70% pada setiap evaluasi modul untuk membuka modul berikutnya. Total durasi sekitar 30–35 menit.",
     startBtn:"🚀 Mulai Pelatihan",
     pathLabel:'Jalur belajarmu',
     devTitle:'Dev: buka semua modul untuk ditinjau',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Modul 3', emoji:'🔧', color:'var(--coral)',
  title:'Masalah Teknis dan Keseimbangan Kelas',
- desc:'Mengapa kekacauan sering kali adalah masalah teknis yang terselubung, apa yang bisa mencegah sebagian besar masalahnya, dan cara menjaga seluruh grup tetap belajar sementara kamu memperbaiki masalah satu siswa.',
- obj:'Mencegah sebagian besar masalah teknis sebelum terjadi, mengikuti protokol yang jelas saat masalah muncul, dan menjaga anggota grup lainnya tetap terlibat sambil menyelesaikan masalah satu siswa.',
+ desc:'Mengapa ketidaktertiban sering kali merupakan masalah teknis yang tersamar, cara menjaga seluruh kelompok tetap belajar saat Anda menangani masalah satu siswa, rencana untuk siswa yang cepat selesai, cara memberi perhatian kepada setiap anak dalam kelompok besar, dan apa yang harus dilakukan ketika siswa bergabung terlambat.',
+ obj:'Mencegah sebagian besar masalah teknis sebelum terjadi, mengikuti protokol yang jelas saat masalah muncul, membuat siswa yang cepat selesai tetap sibuk sementara Anda membantu yang lain, memberi perhatian kepada setiap anak dalam kelompok besar, dan membantu siswa yang datang terlambat mengejar ketertinggalan tanpa menghentikan kelompok.',
  sections:[
   {t:'⚖️ Mengapa ini dibahas di sini', html:`
    <div class="card"><p>Masalah teknis sering membuat kelas menjadi tidak terorganisir dan, akibatnya, siswa menjadi bosan.</p>
@@ -237,23 +237,21 @@ const CONTENT = {
    <div class="card"><p>Sering kali, masalah teknis yang dialami siswa di kelas terjadi karena mereka menggunakan browser selain Google Chrome atau perangkat yang tidak sesuai untuk kursusnya, misalnya mencoba mengikuti kelas lewat tablet, ponsel, atau iPad. Karena itu, penting bagimu untuk mengetahui persyaratan minimumnya supaya bisa membantu mereka.</p></div>
    ${doavoid(
     ["Google Chrome versi terbaru — satu-satunya browser yang sepenuhnya kompatibel",
-     "RAM minimal 4 GB (8 GB untuk Blender atau Unity)",
+     "RAM minimal 4 GB (8 GB untuk Blender)",
      "Koneksi yang stabil, minimal 10 Mbps — koneksi kabel lebih baik daripada Wi-Fi jika memungkinkan",
-     "Ruang penyimpanan kosong minimal 5 GB — Unity dan Blender membutuhkan jauh lebih banyak"],
+     "Ruang penyimpanan kosong minimal 5 GB — Blender membutuhkan jauh lebih banyak"],
     ["Safari — ada bug yang sudah diketahui dengan platform Kodland sejak pembaruan terakhir: tombol yang tidak merespons, layar yang tidak termuat, error saat masuk",
-     "Tablet / iPad untuk kursus seperti Roblox Studio atau Unity — kursus ini membutuhkan komputer sungguhan",
+     "Tablet / iPad untuk kursus seperti Roblox Studio — kursus ini membutuhkan komputer sungguhan",
      "Menganggap masalah di Mac sebagai hilangnya minat sebelum memeriksa apakah penyebabnya hanya Safari"]
    )}
    ${co('co-idea','🍎',`<p>Perhatikan khususnya kombinasi Mac + Safari. Jika siswa pengguna Mac tidak bisa menekan tombol atau layarnya tidak termuat, solusinya hampir selalu: buka kelasnya di Google Chrome. Arahkan keluarga ke google.com/chrome.</p>`)}
    <div class="card"><h4>Apa yang sebenarnya dibutuhkan setiap kursus</h4><div class="tbl-wrap"><table>
    <tr><th>Kursus</th><th>Persyaratan</th><th>Tingkat</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Menggambar</td><td>Cukup Chrome, tidak perlu menginstal apa pun — berfungsi di hampir semua perangkat</td><td>Mudah</td></tr>
-   <tr><td>Kreativitas Digital, Desain Grafis, Ilustrasi</td><td>Chrome + alat berbasis browser (Canva, Krita) — cek persyaratan ukuran layar/tablet</td><td>Perlu dicek</td></tr>
+   <tr><td>Funtech, Scratch, Python 1 / Pro, Web</td><td>Cukup Chrome, tidak perlu menginstal apa pun — berfungsi di hampir semua perangkat</td><td>Mudah</td></tr>
+   <tr><td>Kreativitas Digital, Desain Grafis</td><td>Chrome + alat berbasis browser (Canva, Krita) — cek persyaratan ukuran layar/tablet</td><td>Perlu dicek</td></tr>
    <tr><td>Roblox Studio</td><td>Hanya Windows atau Mac (tidak bisa tablet, tidak bisa Linux), RAM 4 GB, Roblox Studio sudah terinstal sebelum pelajaran 1</td><td>Perlu dicek</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac, atau Linux, disarankan Java Edition, RAM 4 GB, akun Minecraft sendiri</td><td>Perlu dicek</td></tr>
-   <tr><td>Pemodelan 3D</td><td>RAM minimal 8 GB, wajib mouse dengan roda gulir, disarankan GPU khusus</td><td>Berat</td></tr>
-   <tr><td>Unity</td><td>Wajib RAM 8 GB, ruang kosong 10 GB, hanya Windows atau Mac — tidak bisa Chromebook</td><td>Berat</td></tr>
-   </table></div></div>
+   <tr><td>Pemodelan 3D</td><td>RAM minimal 8 GB, wajib mouse dengan roda gulir, disarankan GPU khusus</td><td>Berat</td></tr>   </table></div></div>
   `},
   {t:'🧑‍💻 Masalah teknis pada tutor', html:`
    <div class="card"><p>Perhatian yang sama berlaku untuk perangkatmu sendiri — masalah teknis pada tutor bisa menghambat pelajaran sama seperti masalah teknis pada siswa.</p></div>
@@ -279,6 +277,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Beri grup sesuatu untuk dikerjakan</strong> begitu kamu mulai menangani masalahnya — jangan biarkan mereka hanya menatap layar yang diam.`},
      {ic:'🫂', html:`<strong>Tetap tenang, dan terdengar tenang.</strong> Siswa belajar dari caramu bereaksi, bahkan sebelum masalahnya teratasi. Kalimat tenang seperti “ini kadang terjadi, yuk kita cari solusinya” menjaga suasana kelas tetap kondusif.`}
    ])}
+  `},
+  {t:'⚡ Tidak ada yang menunggu: rencana untuk siswa yang cepat selesai', html:`
+   <div class="card"><p>Setiap kali Anda berhenti untuk membantu satu siswa — dengan masalah teknis atau langkah yang sulit — siswa lain selesai dan tidak punya kegiatan. Siswa yang menunggu akan bosan, dan siswa yang bosan mulai mengobrol, pergi, atau memutuskan bahwa kelas itu membuang waktu. Keluarga menyadarinya: <em>«kelas lebih banyak diisi dengan menunggu selagi tutor membantu yang lain»</em>. Solusinya adalah menyiapkan langkah berikutnya <strong>sebelum</strong> ada yang membutuhkannya.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Sudah selesai mengerjakan tugas?'},
+     {ic:'⭐', label:'1. Aktivitas tambahan di kelas'},
+     {ic:'🎨', label:'2. Buat jadi milikmu: variasi atau sentuhan pribadi'},
+     {ic:'🤝', label:'3. Bantu teman — saat diminta'},
+     {ic:'📚', label:'4. Mulai mengerjakan PR lebih awal'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Tampilkan tangga ini di layar atau di chat</strong> pada awal sesi latihan: <em>«Sudah selesai? 1 → tantangan tambahan · 2 → tambahkan sentuhanmu sendiri · 3 → mulai mengerjakan PR»</em>. Siswa dapat melanjutkan tanpa menunggu Anda.`},
+     {ic:'🎯', html:`<strong>Manfaatkan apa yang sudah ada di panduan.</strong> Banyak kelas menyertakan aktivitas tambahan — siapkan sehari sebelumnya agar siap digunakan.`},
+     {ic:'🤝', html:`<strong>Teman pendamping, dengan aturan.</strong> Siswa yang cepat selesai dapat membantu temannya — Anda yang memintanya, ia menjelaskan tanpa mengetik untuk temannya, dan yang membantu juga mendapat penghargaan.`},
+     {ic:'🖥️', html:`<strong>Lakukan pengecekan singkat di sela-sela membantu.</strong> <em>«Ana, perlihatkan layarmu selama sepuluh detik — bagus, sekarang coba tantangan 2.»</em> Dengan begitu siswa yang cepat selesai merasa diperhatikan, bukan sekadar disibukkan.`}
+   ])}
+  `},
+  {t:'👀 Setiap anak, setiap kelas — perhatian dalam kelompok besar', html:`
+   <div class="card"><p>Dalam kelompok besar, mudah sekali menghabiskan kelas bersama siswa yang paling banyak bicara — sementara anak yang pendiam bisa melewati satu jam penuh tanpa pernah disapa. Bagi anak itu, dan bagi orang tuanya, rasanya <em>«tidak ada yang memperhatikan»</em>. Perhatian tidak membutuhkan lebih banyak waktu; perhatian membutuhkan sistem.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Sering gunakan nama.</strong> Usahakan menyapa setiap siswa dengan namanya minimal dua kali di setiap kelas — saat pemanasan dan sekali lagi saat latihan.`},
+     {ic:'🔄', html:`<strong>Bergiliran.</strong> Bagikan layar secara bergiliran, ambil jawaban dari siswa yang berbeda, dan gunakan pemilih acak agar terasa adil — bukan selalu tangan-tangan cepat yang sama.`},
+     {ic:'👍', html:`<strong>Pengecekan cepat bersama seluruh kelompok.</strong> <em>«Acungkan jempol kalau sudah selesai langkah 2.»</em> Dalam sekali pandang Anda tahu siapa yang tersendat, tanpa menunggu mereka bertanya.`},
+     {ic:'💬', html:`<strong>Pengecekan pribadi untuk siswa yang pendiam.</strong> Pesan singkat di chat pribadi — <em>«Bagaimana kabarnya? Tunjukkan sampai mana kamu»</em> — menjangkau siswa yang tidak akan pernah bertanya di depan semua orang.`},
+     {ic:'📝', html:`<strong>Simpan daftar cepat, di kepala atau di kertas.</strong> Sebelum penutup, periksa: adakah yang belum saya ajak bicara hari ini? Dahulukan mereka.`},
+     {ic:'🙋', html:`<strong>Jawab setiap tangan yang terangkat,</strong> meskipun hanya untuk berkata <em>«Saya sudah melihatmu, Leo — kamu berikutnya.»</em> Tangan yang diabaikan adalah salah satu cara tercepat untuk kehilangan seorang anak.`}
+   ])}
+  `},
+  {t:'⏰ Siswa bergabung terlambat', html:`
+   <div class="card"><p>Siswa datang terlambat karena berbagai alasan: sekolah selesai terlambat, koneksi terputus, tautan hilang. Jika Anda mengulang dari awal setiap kali ada yang bergabung, seluruh kelompok kehilangan waktu. Jika tidak ada yang membantu siswa yang terlambat, ia akan melewati sisa kelas dalam kebingungan, dan itulah yang akan ia ceritakan kepada orang tuanya. Tujuannya adalah membuatnya mulai bekerja dalam beberapa menit, tanpa menghentikan yang lain.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Saat ia bergabung', items:[
+       '<strong>Sapa dengan singkat, sebut namanya:</strong> <em>«Selamat datang, Leo! Kita sedang di langkah 3: membuat karakter melompat.»</em>',
+       '<strong>Jangan menanyakan alasan keterlambatannya di depan kelompok,</strong> dan jangan mengulang penjelasan dari awal untuknya.'
+     ]},
+     {ic:'💬', label:'Di menit-menit pertama', items:[
+       '<strong>Kirim ringkasan satu baris di chat:</strong> apa yang sudah kita lakukan, apa yang sedang kita lakukan sekarang, dan di mana harus mengklik.',
+       '<strong>Berikan tugas berikutnya kepada kelompok terlebih dahulu,</strong> lalu periksa secara pribadi dengan siswa yang terlambat: <em>«Bagikan layarmu sebentar, saya tunjukkan langkah yang terlewat.»</em>',
+       '<strong>Pasangkan dengan teman</strong> jika langkahnya panjang, dan periksa lagi beberapa menit kemudian.'
+     ]},
+     {ic:'📚', label:'Setelah kelas', items:[
+       '<strong>Jika ia melewatkan bagian penting,</strong> bagikan materi (dan rekaman, jika ada) serta sampaikan apa yang perlu dipelajari ulang.',
+       '<strong>Jika hal ini terjadi lagi,</strong> kirim pesan kepada orang tua pada hari yang sama dengan ramah untuk mengetahui alasannya, dan tinggalkan komentar di BO. Jika alasannya adalah jadwal, beri tahu Team Leader Anda: perubahan jadwal bukan keputusan Anda.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Siapkan sebelum kelas.</strong> Tulis satu baris ringkasan singkat untuk setiap tahap rencana kelas Anda. Ketika ada yang datang terlambat, Anda hanya perlu menempelkannya di chat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>Terlambat karena masalah teknis?</strong> Bantu ia masuk, lalu ikuti protokol teknis di atas: 10 menit untuk memperbaikinya, kemudian komunikasikan, dokumentasikan, dan eskalasikan.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +340,10 @@ const CONTENT = {
    {type:'sort', prompt:'Masalah jenis apa ini?', card:'Seorang siswa terus menyalakan mikrofon untuk membicarakan hal yang tidak berhubungan saat penjelasan.', zones:[
      {label:'⚖️ Masalah kedisiplinan', fb:'Benar — ini pola pengelolaan kelas yang perlu dialihkan, bukan gejala teknis.'},
      {label:'🔧 Masalah teknis', fb:'Belum tepat — ini pola kedisiplinan, bukan masalah perangkat atau koneksi.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Anda sedang membantu satu siswa memperbaiki kesalahan, dan tiga siswa lain sudah selesai. Apa yang seharusnya sudah tersedia?', opts:['Tangga «Sudah selesai?» di layar atau di chat: tantangan tambahan, sentuhan pribadi, lalu mulai mengerjakan PR lebih awal','Tidak ada — mereka bisa menunggu beberapa menit','Meminta mereka menonton selagi Anda memperbaiki kesalahan'], correct:0, fb:'Dengan langkah-langkah berikutnya yang sudah siap sebelum ada yang membutuhkannya, tidak ada yang menunggu — dan menunggulah yang mengubah siswa yang cepat menjadi siswa yang bosan.'},
+   {type:'choice', prompt:'Dalam kelompok berisi sepuluh siswa, seorang siswa pendiam tidak mengucapkan sepatah kata pun sepanjang kelas. Hampir waktunya penutup. Apa yang Anda lakukan?', opts:['Membiarkannya — ia akan bicara saat sudah siap','Menyapanya dengan nama sebelum penutup: pengecekan pribadi atau giliran membagikan layar','Mengajukan pertanyaan sulit di depan semua orang agar ia ikut berpartisipasi'], correct:1, fb:'Periksa daftar di kepala Anda sebelum penutup: siapa pun yang belum Anda ajak bicara didahulukan. Pengecekan pribadi atau giliran yang mudah membuatnya merasa diperhatikan tanpa tekanan.'},
+   {type:'sort', prompt:'Apakah ini langkah yang baik ketika siswa bergabung terlambat?', card:'Seorang siswa bergabung terlambat 15 menit. Anda menghentikan kelompok dan mengulang seluruh penjelasan dari awal.', zones:[{label:'💎 Langkah yang baik', fb:'Kurang tepat — sisa kelompok menunggu sementara Anda mengulang semuanya. Sapa siswa, kirim ringkasan satu baris di chat, dan bantu ia secara pribadi setelah kelompok mulai bekerja.'},{label:'🗑️ Bukan langkah yang baik', fb:'Benar! Sambutan singkat, ringkasan satu baris di chat, dan pengecekan pribadi yang singkat membuat siswa yang terlambat mulai bekerja tanpa menghentikan yang lain.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +369,11 @@ const CONTENT = {
      'Saya tegas soal rasa hormat: jika seorang siswa menggunakan bahasa kasar atau menyerang teman sekelasnya, saya mematikan mikrofonnya sebentar untuk melindungi grup, dan kami berbicara setelah kelas',
      'Saat ada yang salah dalam sebuah tugas, saya menganggap kesalahan itu wajar dan memperlakukannya sebagai kesempatan untuk belajar',
      'Jika situasinya tidak bisa diredakan, saya meminta bantuan orang tua — bahkan saat pelajaran berlangsung — lalu setelahnya saya melaporkannya kepada keluarga dan meninggalkan komentar di BO',
-     'Saya mengetes perangkat saya 30 menit sebelum kelas, dan saya menjaga grup tetap bekerja sementara saya memperbaiki masalah teknis satu siswa'
+     'Saya mengetes perangkat saya 30 menit sebelum kelas, dan saya menjaga grup tetap bekerja sementara saya memperbaiki masalah teknis satu siswa',
+     'Saya menampilkan tangga «Sudah selesai?» di layar atau di chat — aktivitas tambahan, sentuhan pribadi, membantu teman, mulai mengerjakan PR lebih awal — agar tidak ada yang menunggu.',
+     'Saya menyapa setiap siswa dengan namanya minimal dua kali per kelas, bergiliran, dan memeriksa sebelum penutup siapa yang belum saya ajak bicara.',
+     'Saya menjawab setiap tangan yang terangkat, dan saya menggunakan pengecekan pribadi untuk siswa yang pendiam.',
+     'Ketika siswa bergabung terlambat, saya menyapanya dengan singkat, mengirim ringkasan satu baris di chat, dan membantunya secara pribadi setelah kelompok mulai bekerja — dan jika hal ini terus terjadi, saya menghubungi orang tua dan meninggalkan komentar di BO.'
    ])}
   `},
   {t:'', html:`

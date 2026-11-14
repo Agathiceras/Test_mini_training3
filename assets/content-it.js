@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-training",
     heroTitle:"Gestire una lezione <span class=\"h-pill\">ben organizzata</span>",
     heroIntro:"Hai ricevuto questa formazione perché alcuni tuoi studenti hanno chiesto un rimborso per problemi di disorganizzazione o di disciplina in classe. Qui ti mostriamo cosa puoi fare come tutor e come gestire queste situazioni.",
-    heroWork:"Completa 5 brevi moduli. Per sbloccare il modulo successivo devi ottenere almeno il 70% nella verifica di ciascun modulo. Circa 25–30 minuti in totale.",
+    heroWork:"Completa 5 brevi moduli. Per sbloccare il modulo successivo, devi ottenere almeno il 70% nella verifica di ciascun modulo. Durata totale: circa 30–35 minuti.",
     startBtn:"🚀 Inizia la formazione",
     pathLabel:'Il tuo percorso',
     devTitle:'Dev: sblocca tutti i moduli per la revisione',
@@ -225,8 +225,8 @@ const CONTENT = {
 },
 {id:'tech', numLabel:'Modulo 3', emoji:'🔧', color:'var(--coral)',
  title:'Problemi tecnici ed equilibrio della classe',
- desc:'Perché il disordine è spesso un problema tecnico mascherato, cosa ne previene la maggior parte e come far continuare a imparare tutto il gruppo mentre risolvi il problema di uno studente.',
- obj:'Prevenire la maggior parte dei problemi tecnici prima che si presentino, seguire un protocollo chiaro quando succedono e mantenere coinvolto il resto del gruppo mentre risolvi il problema di uno studente.',
+ desc:'Perché il disordine è spesso un problema tecnico mascherato, come mantenere tutto il gruppo impegnato mentre risolvi il problema di uno studente, un piano per chi finisce in fretta, come dedicare attenzione a ogni bambino in un gruppo numeroso e cosa fare quando uno studente si collega in ritardo alla lezione.',
+ obj:'Prevenire la maggior parte dei problemi tecnici prima che si presentino, seguire un protocollo chiaro quando si verificano, tenere occupato chi finisce in fretta mentre aiuti gli altri, dedicare attenzione a ogni bambino in un gruppo numeroso e aiutare uno studente che arriva in ritardo a recuperare senza fermare il gruppo.',
  sections:[
   {t:'⚖️ Perché se ne parla qui', html:`
    <div class="card"><p>I problemi tecnici spesso portano disorganizzazione in classe e, di conseguenza, gli studenti si annoiano.</p>
@@ -247,8 +247,8 @@ const CONTENT = {
    ${co('co-idea','🍎',`<p>Fai attenzione in particolare a Mac + Safari. Se uno studente con un Mac non riesce a far rispondere i pulsanti o la schermata non si carica, la soluzione è quasi sempre una: aprire la lezione in Google Chrome. Indica alle famiglie google.com/chrome.</p>`)}
    <div class="card"><h4>Di cosa ha bisogno ciascun corso</h4><div class="tbl-wrap"><table>
    <tr><th>Corso</th><th>Requisiti</th><th>Livello</th></tr>
-   <tr><td>Funtech, Scratch, Python 1 / Pro, Web, Disegno</td><td>Solo Chrome, niente da installare: funziona su quasi tutti i dispositivi</td><td>Facile</td></tr>
-   <tr><td>Creatività digitale, Graphic Design, Illustrazione</td><td>Chrome + uno strumento nel browser (Canva, Krita): verifica i requisiti di dimensione dello schermo e della tavoletta grafica</td><td>Da verificare</td></tr>
+   <tr><td>Funtech, Python 1 / Pro</td><td>Solo Chrome, niente da installare: funziona su quasi tutti i dispositivi</td><td>Facile</td></tr>
+   <tr><td>Creatività digitale</td><td>Chrome + uno strumento nel browser (Canva, Krita): verifica i requisiti di dimensione dello schermo e della tavoletta grafica</td><td>Da verificare</td></tr>
    <tr><td>Roblox Studio</td><td>Solo Windows o Mac (no tablet, no Linux), 4 GB di RAM, Roblox Studio installato prima della lezione 1</td><td>Da verificare</td></tr>
    <tr><td>Minecraft</td><td>Windows, Mac o Linux, consigliata la Java Edition, 4 GB di RAM, account Minecraft personale</td><td>Da verificare</td></tr>
    <tr><td>Modellazione 3D</td><td>Minimo 8 GB di RAM, mouse con rotellina obbligatorio, scheda grafica dedicata consigliata</td><td>Impegnativo</td></tr>
@@ -279,6 +279,53 @@ const CONTENT = {
      {ic:'👥', html:`<strong>Dai al gruppo qualcosa da fare</strong> nel momento stesso in cui inizi a risolvere il problema: non lasciarli a fissare uno schermo fermo.`},
      {ic:'🫂', html:`<strong>Fai sentire la tua calma.</strong> La tua reazione è la lezione, prima ancora della soluzione. Un tranquillo “a volte succede, troviamo un modo per andare avanti” mantiene stabile la classe.`}
    ])}
+  `},
+  {t:'⚡ Nessuno aspetta: un piano per chi finisce in fretta', html:`
+   <div class="card"><p>Ogni volta che ti fermi ad aiutare uno studente — con un problema tecnico o un passaggio difficile — qualcun altro finisce e non ha niente da fare. Chi aspetta si annoia, e chi si annoia comincia a parlare, se ne va o decide che la lezione è una perdita di tempo. Le famiglie se ne accorgono: <em>«la classe passa la maggior parte del tempo ad aspettare mentre il tutor aiuta gli altri»</em>. La soluzione è avere pronto il passaggio successivo <strong>prima</strong> che qualcuno ne abbia bisogno.</p></div>
+   ${stepFlow([
+     {ic:'✅', label:'Hai finito l’attività?'},
+     {ic:'⭐', label:'1. L’attività extra della lezione'},
+     {ic:'🎨', label:'2. Rendila tua: una variante o un tocco personale'},
+     {ic:'🤝', label:'3. Aiuta un compagno — quando ti viene chiesto'},
+     {ic:'📚', label:'4. Portati avanti con i compiti'}
+   ])}
+   ${iconGrid([
+     {ic:'📌', html:`<strong>Mostra la scala sullo schermo o in chat</strong> all’inizio dell’esercitazione: <em>«Hai finito? 1 → sfida extra · 2 → aggiungi il tuo tocco personale · 3 → inizia i compiti»</em>. Gli studenti procedono senza aspettarti.`},
+     {ic:'🎯', html:`<strong>Usa ciò che il manuale offre già.</strong> Molte lezioni includono attività extra: preparale il giorno prima, così sono pronte da usare.`},
+     {ic:'🤝', html:`<strong>Compagni aiutanti, con delle regole.</strong> Uno studente veloce può aiutare un compagno: glielo chiedi tu, spiega senza digitare al posto del compagno e anche chi aiuta riceve un riconoscimento.`},
+     {ic:'🖥️', html:`<strong>Fai brevi controlli tra un aiuto e l’altro.</strong> <em>«Anna, mostrami lo schermo per dieci secondi... benissimo, ora prova la sfida 2».</em> Così chi è veloce si sente notato, non solo occupato.`}
+   ])}
+  `},
+  {t:'👀 Ogni bambino, ogni lezione: l’attenzione in un gruppo numeroso', html:`
+   <div class="card"><p>In un gruppo numeroso è facile passare la lezione con gli studenti che parlano di più, mentre un bambino silenzioso può restare un’ora intera senza che nessuno si rivolga a lui. Per quel bambino, e per il suo genitore, sembra che <em>«nessuno lo noti»</em>. L’attenzione non richiede più tempo; richiede un sistema.</p></div>
+   ${iconGrid([
+     {ic:'📛', html:`<strong>Usa spesso i nomi.</strong> Cerca di rivolgerti a ogni studente per nome almeno due volte in ogni lezione: durante il riscaldamento e di nuovo durante l’esercitazione.`},
+     {ic:'🔄', html:`<strong>Alterna i turni.</strong> Fai condividere lo schermo a turno, raccogli risposte da studenti diversi e usa un selettore casuale perché sia equo, senza che siano sempre le stesse mani veloci.`},
+     {ic:'👍', html:`<strong>Controlli rapidi con il gruppo.</strong> <em>«Pollice in su quando hai finito il passaggio 2».</em> Con un colpo d’occhio vedi chi è bloccato, senza aspettare che lo dica.`},
+     {ic:'💬', html:`<strong>Controlli privati per gli studenti silenziosi.</strong> Un breve messaggio privato in chat — <em>«Come va? Mostrami a che punto sei»</em> — raggiunge studenti che non chiederebbero mai davanti a tutti.`},
+     {ic:'📝', html:`<strong>Tieni una lista rapida, mentale o su carta.</strong> Prima della chiusura, controlla: c’è qualcuno con cui oggi non ho parlato? Comincia da lui.`},
+     {ic:'🙋', html:`<strong>Rispondi a ogni mano alzata,</strong> anche solo per dire <em>«Ti ho visto, Leo: sei il prossimo».</em> Una mano ignorata è uno dei modi più rapidi per perdere un bambino.`}
+   ])}
+  `},
+  {t:'⏰ Uno studente si collega in ritardo', html:`
+   <div class="card"><p>Gli studenti arrivano in ritardo per molti motivi: la scuola è finita tardi, la connessione è caduta, il link si è perso. Se ricominci ogni volta che qualcuno entra, tutto il gruppo perde tempo. Se nessuno aiuta chi è in ritardo, passa il resto della lezione perso, ed è quello che racconta ai genitori. L’obiettivo è farlo lavorare in un paio di minuti, senza fermare gli altri.</p></div>
+   ${timeline([
+     {ic:'👋', label:'Quando entra', items:[
+       '<strong>Salutalo brevemente, per nome:</strong> <em>«Benvenuto, Leo! Siamo al passaggio 3: far saltare il personaggio».</em>',
+       '<strong>Non chiedere perché è in ritardo davanti al gruppo</strong> e non ricominciare la spiegazione per lui.'
+     ]},
+     {ic:'💬', label:'Nei primi minuti', items:[
+       '<strong>Pubblica in chat un riepilogo di una riga:</strong> cosa abbiamo fatto, cosa stiamo facendo ora e dove fare clic.',
+       '<strong>Assegna prima il compito successivo al gruppo,</strong> poi verifica in privato con chi è arrivato in ritardo: <em>«Condividi lo schermo un momento, ti mostro il passaggio che ti sei perso».</em>',
+       '<strong>Affiancagli un compagno</strong> se il passaggio è lungo e ricontrolla come sta andando qualche minuto dopo.'
+     ]},
+     {ic:'📚', label:'Dopo la lezione', items:[
+       '<strong>Se ha perso una parte importante,</strong> condividi i materiali (e la registrazione, se c’è) e indica cosa ripassare.',
+       '<strong>Se succede di nuovo,</strong> scrivi al genitore lo stesso giorno, con gentilezza, per capirne il motivo, e lascia un commento in BO. Se il motivo è l’orario, informa il tuo Team Leader: cambiare l’orario non è una decisione tua.'
+     ]}
+   ])}
+   ${co('co-idea','📝',`<p><strong>Preparati prima della lezione.</strong> Scrivi un breve riepilogo di una riga per ogni fase del tuo piano di lezione. Quando qualcuno arriva in ritardo, ti basta incollarlo in chat.</p>`)}
+   ${co('co-cute','🔧',`<p><strong>In ritardo per un problema tecnico?</strong> Aiutalo a entrare, poi segui il protocollo tecnico descritto sopra: 10 minuti per risolvere, poi comunicare, documentare e fare escalation.</p>`)}
   `}
  ],
  ix:{
@@ -295,7 +342,10 @@ const CONTENT = {
    {type:'sort', prompt:'Che tipo di problema è?', card:'Uno studente continua a riattivare il microfono per parlare di cose che non c’entrano durante la spiegazione.', zones:[
      {label:'⚖️ Problema di disciplina', fb:'Esatto: è uno schema di gestione della classe da riorientare, non un sintomo tecnico.'},
      {label:'🔧 Problema tecnico', fb:'Non proprio: è uno schema di disciplina, non un problema di dispositivo o di connessione.'}
-   ], correctZone:0}
+   ], correctZone:0},
+   {type:'choice', prompt:'Stai aiutando uno studente a risolvere un errore e altri tre hanno già finito. Cosa dovrebbe essere già pronto?', opts:['Una scala «Hai finito?» sullo schermo o in chat: sfida extra, un tocco personale e poi portarsi avanti con i compiti','Niente: possono aspettare qualche minuto','Chiedi loro di guardare mentre risolvi l’errore'], correct:0, fb:'Con i passaggi successivi pronti prima che servano, nessuno aspetta, ed è l’attesa che trasforma uno studente veloce in uno studente annoiato.'},
+   {type:'choice', prompt:'In un gruppo di dieci, uno studente silenzioso non ha detto una parola per tutta la lezione. È quasi ora di chiudere. Cosa fai?', opts:['Lo lasci stare: parlerà quando sarà pronto','Ti rivolgi a lui per nome prima della chiusura: con un controllo privato o dandogli il turno per condividere lo schermo','Gli fai una domanda difficile davanti a tutti perché partecipi'], correct:1, fb:'Controlla la tua lista mentale prima della chiusura: chi non hai ancora sentito va per primo. Un controllo privato o un turno semplice lo fa sentire visto senza pressione.'},
+   {type:'sort', prompt:'È una buona mossa quando uno studente si collega in ritardo?', card:'Uno studente arriva con 15 minuti di ritardo. Fermi il gruppo e ripeti tutta la spiegazione dall’inizio.', zones:[{label:'💎 Buona mossa', fb:'Non proprio. Il resto del gruppo aspetta mentre ripeti tutto. Saluta lo studente, pubblica in chat un riepilogo di una riga e aiutalo in privato quando il gruppo sta lavorando.'},{label:'🗑️ Mossa sbagliata', fb:'Esatto! Un saluto veloce, un riepilogo di una riga in chat e un breve controllo privato fanno iniziare a lavorare chi è in ritardo senza fermare tutti gli altri.'}], correctZone:1}
   ]
  }
 },
@@ -321,7 +371,11 @@ const CONTENT = {
      'Sono fermo sul rispetto: se uno studente usa un linguaggio volgare o attacca un compagno, silenzio il suo microfono per un momento per proteggere il gruppo e ne parliamo dopo la lezione',
      'Quando qualcosa va storto in un’attività, faccio capire che sbagliare è normale e lo tratto come un’occasione per imparare',
      'Se una situazione non si risolve, chiedo aiuto al genitore, anche durante la lezione, e dopo informo la famiglia e lascio un commento nel BO',
-     'Provo la mia postazione 30 minuti prima della lezione e faccio lavorare il gruppo mentre risolvo il problema tecnico di uno studente'
+     'Provo la mia postazione 30 minuti prima della lezione e faccio lavorare il gruppo mentre risolvo il problema tecnico di uno studente',
+     'Mostro sullo schermo o in chat una scala «Hai finito?» (attività extra, un tocco personale, aiutare un compagno, portarsi avanti con i compiti) in modo che nessuno aspetti.',
+     'Mi rivolgo a ogni studente per nome almeno due volte a lezione, alterno i turni e prima della chiusura controllo con chi non ho ancora parlato.',
+     'Rispondo a ogni mano alzata e uso controlli privati con gli studenti silenziosi.',
+     'Quando uno studente si collega in ritardo, lo saluto brevemente, pubblico in chat un riepilogo di una riga e lo aiuto in privato quando il gruppo sta lavorando; e se continua a succedere, scrivo al genitore e lascio un commento in BO.'
    ])}
   `},
   {t:'', html:`
